@@ -1,0 +1,556 @@
+﻿
+.upcommingWrap.upcommingMain {
+background:0;
+margin-top:0;
+}
+
+.salesTitle {
+color:#363636;
+font-size:40px;
+letter-spacing:-.05em;
+background:#fff;
+padding:10px;
+}
+
+.redText {
+color:#dd0017;
+font-style:normal;
+font-weight:700;
+}
+
+.salesTitleEndSn {
+font-size:25px;
+}
+.upcommingWrap ul li li:hover {
+    background: none repeat scroll 0 0 #DD0017;
+}
+.upcommingWrap ul li li:hover a, .upcommingWrap li li:hover a .des {
+    color: #FFFFFF;
+}
+.upcomingSalesFstBlk,.upcomingSalesSecBlk,.upcomingSalesTrdBlk {
+background:#fff;
+}
+
+.upcommingWrap.upcommingMain .secDySale {
+padding:0 10px 0px 0;
+}
+
+.upcomingSalesTrdBlk .secDySale {
+padding-bottom:50px;
+}
+
+.upcomingSalesSecBlk .salesDateTime,.upcomingSalesTrdBlk .salesDateTime {
+margin:20px 0 0;
+}
+
+.quantitySelBlock em {
+font-style:normal;
+color:#666;
+text-shadow:0 -1px 1px RGBa(0,0,0,0.1);
+}
+
+.salesTagIcon {
+background:url(../images/starimage.png) no-repeat scroll 0 0 transparent;
+  display: inline-block;
+    height: 20px;
+   
+    width: 40px;
+
+}
+
+.noBorderBottom {
+border-bottom:medium none!important;
+margin-bottom:10px;
+}
+
+.noBorderBottom:first-child {
+margin-bottom:20px;
+}
+
+.salesDailyWeeklyShop {
+color:#999;
+display:inline-block;
+font-size:18px;
+font-weight:lighter;
+letter-spacing:-1px;
+}
+
+.weeklyShopsUpCominSalesDollarIcon {
+background:url(../images/saleLogo.png) no-repeat scroll 0 0 transparent;
+display: inline-block;
+    height: 29px;
+    margin: 0 10px;
+    width: 32px;
+}
+
+.floatLeft {
+float:left;
+}
+
+.salesDateBox {
+background-color:white;
+color:#333;
+display:block;
+font-family:Georgia,"Times New Roman",Times,serif;
+font-size:12px;
+font-style:italic;
+height:30px;
+line-height:30px;
+position:relative;
+z-index:0;
+margin:18px 0 15px;
+padding:0 10px 0 7px;
+width:297px;
+}
+.salesDateBox2 {
+background-color:#f4f4f4;
+color:#333;
+display:block;
+font-family:Georgia,"Times New Roman",Times,serif;
+font-size:12px;
+font-style:italic;
+height:30px;
+line-height:30px;
+position:relative;
+z-index:0;
+margin:18px 0 15px;
+padding:0 10px 0 7px;
+width:337px;
+}
+
+.salesDateBox4thDay {
+background-color:#f4f4f4;
+color:#333;
+display:block;
+font-family:Georgia,"Times New Roman",Times,serif;
+font-size:12px;
+font-style:italic;
+height:30px;
+line-height:30px;
+position:relative;
+z-index:0;
+margin:35px 0 15px;
+padding:0 10px 0 7px;
+width:337px;
+}
+/*.borderR9 {
+-moz-border-radius:9px;
+-webkit-border-radius:9px;
+border-radius:9px;
+}*/
+
+.triIcon {
+/*height:0;
+left:20px;
+position:absolute;
+top:-9px;
+width:0;
+z-index:0;
+border-color:transparent transparent RGBa(0,0,0,0.06);
+border-style:solid;
+border-width:0 9px 9px;*/
+background:url(../images/whiteTriangle.png)  no-repeat scroll 0 0 transparent;
+width:25px;
+height:14px;
+left:47px;
+position:absolute;
+top:-9px;
+
+}
+
+.triIcon2 {
+/*height:0;
+left:20px;
+position:absolute;
+top:-9px;
+width:0;
+z-index:0;
+border-color:transparent transparent RGBa(0,0,0,0.06);
+border-style:solid;
+border-width:0 9px 9px;*/
+background:url(../images/colorTriangel.png)  no-repeat scroll 0 0 transparent;
+width:25px;
+height:14px;
+left:47px;
+position:absolute;
+top:-9px;
+
+}
+
+.salesWatchIcon {
+background:url(../images/ClockCalander.png) no-repeat scroll 0 0 transparent;
+height:14px;
+width:15px;
+display:inline-block;
+margin:0 3px;
+}
+
+#upcmgContent .transBrdHvr a.filler,.imgList a.filler {
+width:300px;
+height:300px;
+display:block;
+}
+
+.hide,.displayNone {
+display:none;
+}
+
+.bfix li.last .hoverArrow {
+bottom:64px;
+}
+
+.filler {
+/*background:url("/ / s3.amazonaws.com / static.fab.com / relaunch / new-fillers-image.gif ? v = 2 ") repeat scroll 0 0 transparent;*/
+}
+
+.imgInfoBottom {
+height:50px;
+background:none repeat scroll 0 0 rgba(0,0,0,0.7);
+bottom:0;
+left:0;
+position:absolute;
+width:300px;
+
+}
+
+.imgDescription {
+color:#FFF;
+font-size:14px;
+padding-bottom:3px;
+}
+
+.viewDet {
+margin:6px 0 0;
+}
+
+.floatRight {
+float:right;
+}
+
+.round20 {
+-moz-border-radius:20px;
+-webkit-border-radius:20px;
+border-radius:20px;
+}
+
+.fabGrad,.redButtonGrad,.redButtonGradNew {
+background-color:#dd0017;
+background:0;
+background-image:0;
+color:#fff;
+margin:0 1px 1px 0;
+}
+
+.gtIcon {
+background-position:-165px -50px;
+display:inline-block;
+height:12px;
+width:12px;
+}
+
+.salesWrap .imgInfoTop .imgInfoArrow,.imgInfoBottom .imgInfoArrow,.popUpShopWrap .imgInfoTop .imgInfoTop {
+left:7px;
+top:6px!important;
+}
+
+.imgInfoTopHov {
+position:absolute;
+background:#dd0017;
+top:0;
+left:0;
+width:280px;
+padding:10px;
+}
+
+.imgDesEndSn,.popImgWrapper .imgDesEndSn {
+margin-top:2px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-weight:700;
+text-align:left;
+color:#ccc;
+line-height:1em;
+padding:0 0 50px;
+}
+
+a {
+color:#FFF;
+text-decoration:none;
+background:none repeat scroll 0 0 transparent;
+vertical-align:baseline;
+margin:0;
+padding:0;
+}
+
+a:hover,a:active {
+outline:0;
+}
+
+a,a:active,a:visited {
+outline:0 none;
+}
+
+a:hover {
+color:#fff;
+}
+
+ol {
+list-style-type:decimal;
+}
+
+.greyClockBig,.popImgWrapper .greyClockBig {
+bottom:0;
+position:absolute;
+right:50px;
+background-position:-312px -94px;
+margin:0;
+}
+
+.marginLeft5 {
+margin-left:5px;
+}
+
+.marginTop5 {
+margin-top:5px;
+}
+
+.marginBottom5 {
+margin-bottom:5px;
+}
+
+.fstDySale,.trdDySale,.secDySale {
+float:left;
+width:297px;
+background-color:#f4f4f4;
+
+
+}
+
+.secDySale {
+background:white;
+
+width:344px;
+padding:0 10px 50px;
+}
+
+.forIndex .fstDySale {
+padding-bottom:20px;
+}
+
+.salesDateTime {
+color:#999;
+display:inline-block;
+font-size:22px;
+font-weight:lighter;
+letter-spacing:-1px;
+margin:10px 0 0 10px;
+}
+
+ul,ol {
+list-style:none outside none;
+}
+
+#tastygoWrapper {
+/*background:url(//s3.amazonaws.com/static.fab.com/relaunch/bg-mesh-2px-gap.png) repeat scroll #fff;*/
+height:auto!important;
+min-height:95%;
+width:968px;
+margin:0 auto -4.01em;
+padding:0 6px;
+}
+
+.dIB {
+display:inline-block;
+}
+
+
+
+.upcommingWrap ul li ul li {
+border-bottom:1px solid #fa9bed;
+position:relative;
+padding:10px 10px 10px 28px;
+height:33px;
+width:240px;
+
+}
+
+.upcommingWrap a {
+color:#5e636c;
+font-size:13px;
+}
+
+.upcommingWrap ul li .title {
+font-weight:700;
+}
+
+.upcommingWrap ul li a span {
+display:block;
+font-weight:lighter;
+}
+
+.upcommingWrap .des {
+color:#666;
+}
+
+.secDySale .transBrdHvr,.fstDySale .transBrdHvr {
+left:97%;
+}
+
+.secDySale .transBrdHvr,.fstDySale .transBrdHvr,.trdDySale .transBrdHvr {
+height:300px;
+position:absolute;
+top:-150px;
+z-index:1;
+border-color:rgba(51,51,51,0.6) rgba(51,51,51,0.604);
+border-style:solid;
+border-width:7px;
+}
+
+.secDySale .hoverArrow,.fstDySale .hoverArrow {
+border-right:15px solid rgba(51,51,51,0.6);
+left:-1.83em;
+}
+
+.secDySale .hoverArrow,.fstDySale .hoverArrow,.trdDySale .hoverArrow {
+border-bottom:15px solid transparent;
+border-top:15px solid transparent;
+bottom:115px;
+height:0;
+position:absolute;
+width:0;
+}
+
+.salesWrap .imgInfoTop .tastygoGrad,.imgInfoBottom .tastygoGrad,.popUpShopWrap .imgInfoTop .tastygoGrad {
+height:26px;
+width:26px;
+margin:18px 7px 0 0;
+}
+
+a.viewDet .gtIcon,span.viewDet .gtIcon {
+background-position:-165px -50px;
+display:inline-block;
+height:12px;
+width:12px;
+position:relative;
+top:5px;
+}
+
+.upcommingWrap ul li li:hover,#slides .prev:hover,#slides .next:hover {
+background:#ff42e7;
+color:White;
+}
+
+.productDet a.viewDet {
+background-color:#dd0017;
+color:#fff;
+display:block;
+font-size:20px;
+font-weight:700;
+height:24px;
+line-height:20px;
+position:absolute;
+right:12px;
+text-align:center;
+top:52px;
+width:24px;
+}
+
+.endingSoonWrap .buyNowBg .gtIcon,.upcommingWrap .gtIcon {
+position:absolute;
+top:7px;
+}
+
+.salesTitleWeeklyShops {
+font-size:25px;
+font-style:normal;
+color:#000;
+display:inline-block;
+float:left;
+padding:0;
+}
+
+.trdDySale .hoverArrow {
+right:-1.83em;
+border-left:15px solid rgba(51,51,51,.6);
+}
+
+.trdDySale .transBrdHvr {
+right:97%;
+z-index:11;
+}
+
+/*.upcommingMain .fabBorderSpace,.upcommingMain .tastygoBorderSpace {
+background:url(//s3.amazonaws.com/static.fab.com/relaunch/bg-mesh-2px-gap.png) repeat scroll 0 0 transparent;
+margin-top:-6px;
+position:relative;
+}
+
+.tastygoShopSprite,.spriteIcon {
+background:url(../images/tastygo_images.png) no-repeat scroll 0 0 transparent;
+}*/
+
+.show,.dB,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,.show,.dB,.tastygo_select.active .list,#filter_shop_name_input_result li .primaryTitle,#todaySaleLink:hover .newSaleNav,#upcomingSaleLink:hover .upcomingSaleNav,#splOfferLink:hover .splOfferNav,#splOfferLinkMadonna:hover .splOfferNav,#popUpShopMenu:hover .popupSalesNav,.salesWrap li:hover .imgInfoBottomHov,.popImgWrapper:hover .imgInfoBottomHov,.upcommingWrap ul li li:hover .transBrdHvr,#prodList .prodImgBlock:hover .discount,#prodList .prodImgBlock:hover .discountTxt,#prodDet .imgWrap:hover .discount,#prodDet .imgWrap:hover .discountTxt,#productFavCom .favIcon:hover .toolTip1,#productCom.active:hover .toolTip,.giftIconProduct:hover .giftShippingToolTip.giftShippingToolTipOdd,.giftIconRedProductDetail:hover #shippingToolTip,.weeklyShopsSaleDescRB ul li.selected .tringleHover,.blankItem {
+display:block;
+}
+
+.fabGrad:active,.redButtonGrad:active,#buttonGradient:active,.tastygoGrad:active,.redButtonGrad:active,#buttonGradient:active,.tastygoGreenGrad:active,#tastygofbbanner .fBbannerBlock .tryItOutButton a:active,#orderAsGiftYes .confrmB:active {
+background:0;
+background-image:0;
+margin:1px 0 0 1px;
+}
+.tastygoGrad, .redButtonGrad, .redButtonGradNew {
+    background:url(../images/product-arow-right.png) no-repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    margin: 0 1px 1px 0;
+}
+.clear {
+clear:both;
+}
+
+
+/*For Toggle*/
+.noBorderBottom {
+    border-bottom: none!important;
+    margin-bottom: 10px
+}
+.salesDailyWeeklyShop {
+    color: #999;
+    
+    display: inline-block;
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: -1px
+}
+
+.salesWrap .imgInfoTop .floatLeft,.popUpShopWrap .imgInfoTop .floatLeft {
+    width: 80%
+}
+.weeklyShopsUpCominSalesFoodieIcon {
+    background-position: -198px -545px;
+    height: 30px;
+    width: 29px
+}
+
+.weeklyShopsUpcominSalesMinusIcon.weeklyShopsUpcominSalesPlusIcon:hover {
+    background-position: -1px -580px
+}
+
+.weeklyShopsUpcominSalesMinusIcon:hover {
+    background-position: -1px -580px
+}
+
+.weeklyShopsUpcominSalesPlusIcon:hover {
+    background-position: -28px -580px
+}
+.weeklyShopsUpcominSalesPlusIcon {
+    background-position: -420px -394px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer
+}
+
+#upcomingSaleLink .triIcon {
+    border-color: transparent transparent #444
+}
+

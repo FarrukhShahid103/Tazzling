@@ -1,0 +1,1658 @@
+﻿html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+a:link {
+}
+a, a:active, a:visited {
+    outline: 0 none;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.tastygoHTextSml em, .tastygoBigHText em, .tastygoHText em {
+    color: #DD0017;
+    font-style: normal;
+}
+ul, ol {
+    list-style: none outside none;
+}
+a:link {
+}
+a, a:active, a:visited {
+    outline: 0 none;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a {
+    color: #46C5EC;
+}
+a, ins, del {
+    text-decoration: none;
+}
+.image-grid:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.image-grid:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+ul li {
+   
+}
+.feedItem {
+    -moz-transition-duration: 3s;
+    -moz-transition-property: border;
+    background: none repeat scroll 0 0 white;
+    border: 1px dotted #DD0017;
+    color: #333333;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 16px;
+    margin: 15px auto;
+    width: 225px;
+}
+.marginRight7 {
+    margin-right: 7px;
+}
+
+html,
+.fBbannerBlock {
+  
+    display: block;
+   
+    height: 46px;
+    width: 100%;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+     margin-top:75px;
+}
+
+.fbBannerCross {
+    background-position: -202px -51px !important;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    margin-left: 4px;
+    float: left;
+    top: 6px
+}
+.fbBannerCross:hover
+{
+    cursor:pointer;
+     
+    }
+.image-grid:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.image-grid:after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+.filler {
+    background: url(../images/new-fillers-image.gif) repeat scroll 0 0 transparent
+}
+
+.tastygoShopSprite,.spriteIcon {
+    background: url(../images/tastygo_images.png) no-repeat scroll 0 0 transparent
+    
+}
+.fBbannerBlock {
+  /*  background: -moz-linear-gradient(100% 100% 90deg, #000000, #292929) repeat scroll 0 0 transparent;*/
+  background-color:Black;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 1px 1px 0 #999999;
+    display: block;
+    height: 46px;
+    margin: 0 auto;
+    width: 826px;
+}
+
+
+.fbBannerFbIcon {
+    background-position: -1px -607px;
+    height: 27px;
+    width: 28px;
+    display: inline-block;
+    margin: 0 15px 0 8px;
+    position: relative;
+    top: 8px;
+    top: 10px;
+    float: left
+}
+
+
+#tastygofbbanner .fBbannerBlock h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 0;
+    position: relative;
+    top: 2px;
+    margin-right: 25px;
+    float: left;
+  
+}
+
+.trumpetNewIcon {
+    background-position: -415px -603px;
+    display: inline-block;
+    width: 78px;
+    height: 29px;
+    position: relative;
+    top: 5px;
+   
+}
+#tastygofbbanner .fBbannerBlock .tryItOutButton a {
+    background-color: #dd0017;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 20px;
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #dd0017;
+    background: -moz-linear-gradient(100% 100% 90deg,#b50025,#f40017);
+    background: -webkit-gradient(linear,0% 0,0% 100%,from(#f40017),to(#b50025));
+    background-image: -o-linear-gradient(#b50025,#f40017);
+    float: left;
+    padding-top: 8px;
+    top: 8px;
+    
+    
+}
+#tastygofbbanner {
+    padding: 11px 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%
+}
+
+
+.masonry, .masonry .masonry-brick {
+    -moz-transition-duration: 1s;
+}
+.masonry {
+    -moz-transition-property: height, width;
+}
+.masonry .masonry-brick {
+    -moz-transition-duration: 1s, 1s, 1s, 3s, 3s;
+}
+.nextPage {
+    -moz-transition-duration: 0s !important;
+}
+#tastygofbbanner .fBbannerBlock .tryItOutButton a:active {
+    background: -moz-linear-gradient(100% 100% 90deg,#f40017,#b50025);
+    background: -webkit-gradient(linear,0% 0,0% 100%,from(#b50025),to(#f40017));
+    background-image: -o-linear-gradient(#b50025,#f40017);
+    margin: 1px 0 0 1px
+}
+
+.fstFeedNotifyContainer {
+    left: 50%;
+    margin-left: -80px;
+    position: absolute;
+    top: 107px;
+    width: 162px;
+    z-index: -1;
+}
+#feedNotificationContainer a {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    height: 22px;
+    line-height: 28px;
+    padding: 7px 11px;
+    text-align: center;
+}
+.fstFeedNotify, .lstFeedsMore {
+    padding: 6px;
+}
+.fstFeedNotify .refreshIcon {
+    background-position: -140px -476px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    top: 1px;
+    width: 14px;
+}
+.fstFeedNotify:hover, .lstFeedsMore:hover {
+    color: #666666;
+}
+.feedsContainer {
+    padding: 10px 0 30px;
+}
+.lstFeedsMore {
+    background: none repeat scroll 0 0 transparent;
+    height: 20px;
+    margin: auto;
+    position: relative;
+    top: 100%;
+    width: 20%;
+}
+
+#liveFeedHeaderCtWrap {
+    background: none repeat scroll 0 0 white;
+    border-bottom: 1px solid #D9D9D9;
+    box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.4);
+  
+}
+
+.tastygoHeadingWrapper {
+    background-color: #fff;
+    min-height: 40px;
+    padding: 13px 0 0 12px
+}
+.tastygoHeadingWrapper {
+    min-height: 40px;
+    padding: 13px 0 0 12px;
+    background-color: #fff
+}
+.tastygoHeadingWrapper h1 {
+    margin-right: 75px
+}
+
+.tastygoHeadingWrapper h5 a {
+    color: #333;
+    font-size: 13px;
+    font-weight: normal
+}
+
+.tastygoHeadingWrapper h5 a:hover {
+    color: #dd0017;
+    text-decoration: underline
+}
+
+.tastygoHeadingWrapper h3.tastygoTimerText {
+    padding-top: 5px;
+    line-height: 28px
+}
+
+.tastygoHeadingWrapper h2.tastygoTimerText {
+    line-height: 28px
+}
+
+.tastygoHeadingWrapper .greyClockBig {
+    position: relative;
+    top: -5px;
+    position: static;
+    margin-top: -5px;
+    margin-left: 16px
+}
+
+.tastygoPayIssueHeadingWrapper {
+    min-height: 19px;
+    padding: 10px;
+    background-color: #f6f8e3;
+    border: 1px solid #e1e6b8;
+    font-weight: bold;
+    width: 943px;
+    margin-left: 2px;
+    overflow: hidden
+}
+
+.tastygoPayIssueHeadingWrapper .leftPart {
+    width: 353px;
+    float: left;
+    color: #dd0017;
+    font-style: italic;
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: normal
+}
+
+.tastygoPayIssueHeadingWrapper .rightPart {
+    width: 590px;
+    float: left;
+    color: #000;
+    font-size: 12px
+}
+
+.tastygoPayIssueHeadingWrapper .rightPart a {
+    color: #000;
+    text-decoration: underline;
+    line-height: 18px
+}
+
+.tastygoPayIssueHeadingWrapper .rightPart a:hover {
+    color: #dd0017;
+    text-decoration: underline;
+    line-height: 18px
+}
+
+.tastygoHeadingWrapper h2.tastygoTimerText em,.tastygoHeadingWrapper h2.tastygoTimerText,.tastygoTimerText {
+    color: #333;
+    font: italic normal 18px Georgia,"Times New Roman",Times,serif;
+    line-height: 18px;
+    padding: 0
+}
+
+.tastygoHeadingWrapper h2.tastygoTimerText em,.tastygoTimerText em {
+    color: #dd0017
+}
+#feedNotificationContainer a {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    height: 22px;
+    line-height: 28px;
+    padding: 7px 11px;
+    text-align: center;
+}
+#feedNotificationContainer a {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    height: 22px;
+    line-height: 28px;
+    padding: 7px 11px;
+    text-align: center;
+}
+.fstFeedNotifyContainer {
+    left: 50%;
+    margin-left: -80px;
+    position: absolute;
+    top: 107px;
+    width: 162px;
+    z-index: -1;
+}
+.floatLeft {
+    float: left
+}
+
+.font36 {
+    font-size: 36px
+}
+
+.font22 {
+    font-size: 22px
+}
+
+.font21 {
+    font-size: 21px
+}
+
+.font20 {
+    font-size: 20px
+}
+
+.font30 {
+    font-size: 30px
+}
+
+.font40 {
+    font-size: 40px
+}
+
+.font24 {
+    font-size: 24px
+}
+
+.font12 {
+    font-size: 12px
+}
+
+.color333 {
+    color: #333
+}
+
+.colorFFF {
+    color: #FFF
+}
+
+.colorCCC {
+    color: #CCC
+}
+
+.color777 {
+    color: #777
+}
+
+.color000 {
+    color: #000
+}
+
+.colorDD00 {
+    color: #dd0017
+}
+
+.fontB {
+    font-weight: bold
+}
+
+.fontFamG {
+    font-family: Georgia,"Times New Roman",Times,serif
+}
+
+.fontFamA {
+    font-family: Arial
+}
+
+.fontIt {
+    font-style: italic
+}
+
+.fontNr {
+    font-style: normal
+}
+
+.color666 {
+    color: #666
+}
+
+.font13 {
+    font-size: 13px
+}
+
+.font28 {
+    font-size: 28px
+}
+
+.font16 {
+    font-size: 16px
+}
+
+.font14 {
+    font-size: 14px
+}
+
+.font18 {
+    font-size: 18px
+}
+
+.font17 {
+    font-size: 17px
+}
+
+.font11 {
+    font-size: 11px
+}
+.removeFilter {
+    background-position: -400px -574px;
+    cursor: pointer;
+    height: 8px;
+    left: 3px;
+    margin-left: 2px;
+    position: relative;
+    top: 1px;
+    width: 6px;
+}
+.removeFilter:hover {
+    background-position: -400px -600px;
+}
+.color999 {
+    color: #999
+}
+
+.floatRight {
+    float: right
+}
+
+.clear {
+    clear: both
+}
+.confrmB {
+    background-color: #d7d6d6;
+    background: -moz-linear-gradient(100% 100% 90deg,#d7d6d6,#e7e7e7);
+    background: -webkit-gradient(linear,0% 0,0% 100%,from(#e7e7e7),to(#d7d6d6));
+    background-image: -o-linear-gradient(#e7e7e7,#e7e7e7);
+    color: #666;
+    margin: 0 1px 1px 0
+}
+
+.confrmB:active {
+    background-color: #e7e7e7;
+    background: -moz-linear-gradient(100% 100% 90deg,#e7e7e7,#d7d6d6);
+    background: -webkit-gradient(linear,0% 0,0% 100%,from(#e7e7e7),to(#d7d6d6));
+    background-image: -o-linear-gradient(#e7e7e7,#e7e7e7);
+    color: #666;
+    margin: 1px 0 0 1px
+}
+
+.confrmB::-moz-focus-inner,.confrmB:focus {
+    border: 0
+}
+
+.confrmB:hover {
+    cursor: pointer
+}
+
+.borderR5,.round5 {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+}
+.socialTools #showEverything:hover .removeFilter {
+    background-position: -400px -600px;
+}
+.socialTools li > span {
+    background-color: #E2E2E2;
+    border-radius: 18px 18px 18px 18px;
+    color: #666666;
+    height: 16px;
+}
+.socialTools li .selected {
+    background-color: #666666;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.5) inset;
+    color: white;
+}
+.socialTools li {
+    cursor: pointer;
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0 0;
+}
+
+.dIB {
+    display: inline-block
+}
+
+.feedRgtBlk .switchBackground {
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    width: 56px;
+}
+.feedRgtBlk .on {
+    background-position: 0 -476px;
+}
+.feedRgtBlk .off {
+    background-position: -81px -476px;
+}
+.feedRgtBlk .switchBackground .sliderButton {
+    background-position: -58px -476px;
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
+.tastygoHeadingWrapper .feedRgtBlk {
+    position: relative;
+    top: -2px;
+}
+.feedHeaderWrap .feedRgtBlk {
+    padding: 8px;
+}
+.socialTools li > span {
+    background-color: #E2E2E2;
+    border-radius: 18px 18px 18px 18px;
+    color: #666666;
+    height: 16px;
+}
+.socialTools li .selected {
+    background-color: #666666;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.5) inset;
+    color: white;
+}
+.socialTools li .selector {
+    line-height: 16px;
+    padding: 5px 10px;
+}
+.socialTools li .separator {
+    background: url(../images/bg-mesh-2px-gap.png) repeat scroll 0 0 transparent;
+    height: 24px;
+    width: 5px;
+}
+.socialTools li .trending {
+    height: 15px;
+    padding: 5px;
+}
+.socialTools li .downIcon {
+    background-position: -135px -42px;
+    height: 26px;
+    position: relative;
+    width: 26px;
+}
+.socialTools li .downIcon:hover {
+    background-color: #DD0017;
+}
+.filterAndSort .downIcon {
+    height: 26px!important;
+    width: 26px!important;
+    vertical-align: middle
+}
+.downArrow {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+    height: 0;
+    left: 7px;
+    position: absolute;
+    top: 11px;
+    width: 0;
+    z-index: 0;
+}
+.socialTools .filterMenu {
+    background-color: #333333;
+    background-image: -moz-linear-gradient(100% 100% 90deg, #333333, #000000);
+    border-radius: 5px 5px 5px 5px;
+    cursor: default;
+    display: none;
+    left: -38px;
+    padding: 0 0 15px;
+    position: absolute;
+    top: 35px;
+    width: 605px;
+}
+.filterMenu .tagTri {
+    border-color: transparent transparent #000000 !important;
+}
+.socialTools .filterMenu h2, .uShopDropDownWrap h2 {
+    color: #CCCCCC;
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 1em;
+    padding: 0 0 8px;
+    text-align: left;
+    width: 140px;
+}
+.socialTools .filterMenu ul li a:hover, .uShopDropDownWrap ul li a:hover {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    cursor: pointer;
+}
+.socialTools .filterMenu .overflowHidden ul li {
+    border-bottom: 1px dotted #606060;
+    color: white;
+    line-height: 100%;
+    margin-right: 30px;
+}
+.socialTools .filterMenu .shopSecondMenu ul li a {
+    border-right: medium none;
+    color: #CCCCCC;
+    line-height: 100%;
+    margin: 0;
+    padding: 8px 30px 8px 5px;
+    width: 123px !important;
+}
+.socialTools .filterMenu .shopSecondMenu {
+    padding: 15px 0 0 15px;
+    width: 158px;
+}
+.socialTools .filterMenu ul li a {
+    border-right: 0 none;
+    color: #CCCCCC;
+    display: inline-block;
+    line-height: 100%;
+    margin: 0;
+    padding: 8px 0 8px 8px;
+    width: 150px;
+}
+.editSS {
+    background: -moz-linear-gradient(100% 100% 90deg, #D7D6D6, #E7E7E7) repeat scroll 0 0 transparent;
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px 8px;
+}
+.preferences {
+    height: 26px;
+    background-position: -28px -617px;
+    width: 22px;
+    display: inline-block;
+    position: relative;
+    top: 3px
+}
+#footerWrapper {
+    background: url(../images/bg-mesh-2px-gap.png)  repeat scroll 0 0 #FFFFFF;
+    height: 4em;
+    margin: 0 auto;
+    position: relative;
+}
+#footer {
+    background-color: #FFFFFF;
+    border-color: transparent #FFFFFF;
+    border-style: none solid;
+    border-width: 0 1px;
+    margin: 24px auto;
+    padding: 0 15px;
+}
+#footer ul.footerLinks {
+    line-height: 4em;
+    list-style-type: none;
+}
+#footer .copyText {
+    color: #AFAFAF;
+    font-size: 10px;
+    line-height: 4.5em;
+    margin-left: 5px;
+}
+#footer ul.socialLinks {
+    list-style-type: none;
+    padding-top: 9px;
+}
+#footer ul.footerLinks li {
+    float: left;
+    padding-right: 10px;
+}
+#footer ul.footerLinks li a {
+    color: #000000;
+    font-size: 10px;
+    text-decoration: none;
+}
+#footer ul.socialLinks li {
+    float: left;
+    padding-right: 5px;
+}
+#tastygoModalContent .footer > span {
+    float: right;
+}
+#tastygoModalContent .footer a {
+    color: black;
+    display: inline;
+}
+#tastygoModalContent .footer a:hover {
+    color: #666666;
+}
+
+
+.feedItem .socialToolbar {
+    -moz-transition-property: height;
+    background: none repeat scroll 0 0 white;
+    bottom: 0;
+    padding: 14px 10px 5px;
+    position: absolute;
+    width: 205px;
+}
+.salesTagIcon {
+    background-position: -31px -607px;
+    display: inline-block;
+    height: 12px;
+    margin: 5px 1px 5px 5px;
+    position: relative;
+    top: 3px;
+    width: 12px;
+}
+.feedItem .socialToolbar .loader {
+    display: inline-block;
+    height: 22px;
+    left: 32px;
+    position: absolute;
+    width: 22px;
+}.feedItem .comments {
+    background-color: #F2F2F2;
+    border-top: 1px dotted #7F7F7F;
+    height:18px;
+}
+/*.feedItem .comments > div {
+   margin-top:-3px;
+}*/
+.feedItem .comments .displayPic {
+    min-height: 50px;
+}
+.feedItem .comments .commentContent {
+    line-height: 12px;
+    margin-left: 10px;
+    width: 140px;
+    word-wrap: break-word;
+}
+.feedItem .comments .commentContent .name:hover {
+    color: #DD0017;
+}
+.feedItem .comments .commentContent .name {
+    color: #333333;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.feedItem .comments .commentContent .message {
+    color: #666666;
+    font-size: 11px;
+}
+.feedItem .comments .bottomToolbar {
+    border-bottom: 0 none;
+    color: #999999;
+    font-style: italic;
+    letter-spacing: -0.001em;
+    margin-right:10px; margin-top:3px;
+    min-height: 28px;
+    padding-bottom: 2px;
+}
+.feedItem .comments .bottomToolbar .separator {
+    float: right;
+    position: relative;
+    top: 11px;
+}
+
+
+.feedItem .priceTag {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 12px;
+    font-weight: bold;
+    left: 20px;
+    line-height: 25px;
+    margin: 0 1px 1px 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+}
+
+.feedItem .socialToolbar > span {
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    max-width: 80px;
+    position: relative;
+}
+.feedItem .socialToolbar .tumblrIconNew, .fbIconNew, .twIconNew {
+    margin: 0;
+}
+
+.forLiveFeeds li {
+    height: 35px;
+    padding: 0;
+}
+.forLiveFeeds li a {
+    margin-top: 0;
+}
+.feedContnt {
+    width: 575px;
+}
+.socialLinks.floatRight.forLiveFeeds li.googlePlusIcon > div {
+    height: 20px !important;
+    line-height: 38px !important;
+    width: 75px !important;
+}
+.forLiveFeeds {
+    display: none;
+    width: 235px;
+}
+
+.feedItem .socialToolbar {
+    -moz-transition-property: height;
+    background: none repeat scroll 0 0 white;
+    bottom: 0;
+    padding: 14px 10px 5px;
+    position: absolute;
+    width: 205px;
+}
+.feedItem .socialToolbar .loader {
+    display: inline-block;
+    height: 22px;
+    left: 32px;
+    position: absolute;
+    width: 22px;
+}
+.feedItem .socialToolbar > span {
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    max-width: 80px;
+    position: relative;
+}
+.feedItem .socialToolbar .tumblrIconNew, .fbIconNew, .twIconNew {
+    margin: 0;
+}
+.feedItem .imageContainer {
+    min-height: 200px;
+    position: relative;
+}
+.feedItem .imageContainer > .imgParent {
+    height: 215px;
+    overflow: hidden;
+}
+.feedItem .imageContainer .imgParent > img {
+    cursor: pointer;
+    padding: 10px 10px 0;
+    width: 205px;
+}
+
+#model-overlay {background-color:#eee; cursor:wait;}
+.feedItem .sizeSelector {
+    background: none repeat scroll 0 0 #FCFCFC;
+    box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.3);
+    height: 69px;
+    margin: 0;
+    position: relative;
+    width: 225px;
+}
+.feedItem .sizeSelector > div {
+    padding-top: 6px;
+    text-align: center;
+}
+.selectCt {
+    border-bottom: 1px dotted #B2B2B2;
+    margin: 0 10px 2px;
+    padding-bottom: 5px;
+}
+.feedItem .sizeSelector .addToCart {
+    margin-right: 7px;
+}
+
+/*.feedItem .tbCt {
+    max-height: 74px;
+    overflow: hidden;
+    position: relative;
+}*/
+.tweet .bottomToolbar {
+    float: left;
+}
+.tweet .bottomToolbar .button {
+    color: #999999;
+    float: left !important;
+    font-family: helvetica;
+    font-size: 11px;
+    font-weight: normal;
+    margin-right: 8px !important;
+}
+.tweet .bottomToolbar .button > span {
+    display: inline-block;
+    height: 14px;
+    margin-right: 4px;
+    width: 14px;
+}
+.tweet .bottomToolbar .button .favorite {
+    background-position: -449px -48px;
+    position: relative;
+    top: 2px;
+}
+.tweet .bottomToolbar .button .reTweetIcon {
+    background-position: -433px -47px;
+    position: relative;
+    top: 2px;
+}
+select,input,textarea,button {
+    font: 99% "Helvetica Neue",Helvetica,Arial,sans-serif;
+    outline: 0
+}
+input[type=button],input[type=submit],button {
+    cursor: pointer
+}
+
+button,input,select,textarea {
+    margin: 0
+}
+
+button {
+    width: auto;
+    overflow: visible
+}
+
+.button:hover,
+.button:focus {
+
+
+  color: Red;
+  cursor:pointer;
+  text-align:left;
+}
+
+.feedItem .action {
+    color: #666666;
+    font-size: 12px;
+    height: 42px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-align:left;
+}
+.feedItem .action .user {
+    font-weight: bold;
+}
+.feedItem .action .user {
+    color: #333333;
+}
+.feedItem .action .product {
+    color: #333333;
+    cursor: pointer;
+}
+.feedItem .action .product:hover {
+    color: #DD0017;
+}
+.feedItem .action .product_sell {
+    background-position: -258px -356px;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    margin: 0 4px 3px 0;
+    position: relative;
+    text-indent: -9999px;
+    top: 8px;
+    width: 24px;
+}
+.feedItem .action > img {
+    margin-right: 4px;
+}
+
+.user.clickable.sameUser:hover {
+    color: #333333 !important;
+    cursor: default !important;
+}
+.feedItem .infoToolbar .timestamp {
+    color: #A1A1A1;
+    margin-right: 5px;
+}
+.feedItem .infoToolbar .timestamp .timeIcon {
+    background-position: -335px -48px;
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px;
+    position: relative;
+    text-indent: -9999px;
+    top: 2px;
+    width: 16px;
+}
+.feedItem .infoToolbar .timestamp .timeIcon {
+    background-position: -335px -48px;
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px;
+    position: relative;
+    text-indent: -9999px;
+    top: 2px;
+    width: 16px;
+}
+#productFavCom .favCount {
+    color: #999;
+    font-weight: bold;
+    height: 17px;
+    line-height: 17px;
+    vertical-align: top
+}
+
+.liveFdToolTipContent .counter, #orderSuccessMiddle .counter {
+    background-color: #666666;
+    color: #CCCCCC !important;
+    float: left;
+    font-size: 1.5em;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 12px;
+    text-align: center;
+    width: 32px;
+}
+.feedItem .infoToolbar .favCount .icon {
+    background-position: -250px -26px;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin: 0 2px;
+    position: relative;
+    text-indent: -9999px;
+    top: 3px;
+    width: 16px;
+}
+.feedItem .infoToolbar .favCount .icon:hover {
+    background-position: -306px -26px;
+}
+.feedItem .infoToolbar .favCount .faved {
+    background-position: -306px -26px;
+    cursor: default;
+}
+.feedItem .infoToolbar .favCount {
+    color: #999999;
+    font-size: 11px !important;
+}
+.feedItem .infoToolbar .favCount .counter {
+    font-size: 11px !important;
+}
+.feedItem .infoToolbar .commentCount {
+    color: #999999;
+    cursor: pointer;
+    font-size: 11px;
+}
+.feedItem .infoToolbar .commentCount .icon {
+    background-position: -263px -25px;
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px;
+    position: relative;
+    text-indent: -9999px;
+    top: 3px;
+    width: 16px;
+}
+.feedItem .infoToolbar .commentCount .icon:hover {
+    background-position: -481px -285px;
+}
+.feedItem .infoToolbar .cartCount {
+    color: #999999;
+    cursor: pointer;
+    font-size: 11px;
+    margin-left: 2px;
+}
+.feedItem .infoToolbar .cartCount .icon {
+    -moz-transition-duration: 1s;
+    -moz-transition-property: background-position;
+    background-position: -260px -363px;
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px;
+    position: relative;
+    text-indent: -9999px;
+    top: 5px;
+    width: 16px;
+}
+.feedItem .infoToolbar .cartCount:hover icon {
+    background-position: -272px -362px;
+}
+/*.feedItem .comments {
+    background-color: #F2F2F2;
+    border-top: 1px dotted #7F7F7F;
+    height:30px;
+}
+*/
+.feedItem .infoToolbar .buyIt {
+    color: #DD1700;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 6px;
+    position: relative;
+}
+.buyItLoaderWithS {
+    bottom: 35px;
+    left: 115px;
+    position: absolute;
+    z-index: 99999;
+}
+.feedItem .sizeSelector {
+    background: none repeat scroll 0 0 #FCFCFC;
+    box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.3);
+    height: 69px;
+    margin: 0;
+    position: relative;
+    width: 225px;
+}
+.feedItem .sizeSelector > div {
+    padding-top: 6px;
+    text-align: center;
+}
+.selectCt {
+    border-bottom: 1px dotted #B2B2B2;
+    margin: 0 10px 2px;
+    padding-bottom: 5px;
+}
+.feedItem .sizeSelector .addToCart {
+    margin-right: 7px;
+}
+.feedItem .sizeSelector .cancel {
+    cursor: pointer;
+}
+.feedItem .sizeSelector .cancel:hover {
+    color: #999999 !important;
+}
+.feedItem .tbCt {
+    max-height: 74px;
+    overflow: hidden;
+    position: relative;
+}
+.sizeSelector .addToCart {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 4px 21px 5px 22px;
+}
+.sizeSelector .cancel {
+    font-size: 12px;
+}
+
+.cartWrap {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 4px !important;
+    width: 197px;
+}
+.redButton:hover {
+    cursor: pointer;
+}
+.tastygoSubmitBtn {
+    border: 0 none;
+    color: #FFFFFF;
+    
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    outline: 0 none;
+    padding: 0.6em 1.5em;
+}
+
+.tastygoGrad, .redButtonGrad, .redButtonGradNew {
+    background: -moz-linear-gradient(100% 100% 90deg, #B50025, #F40017) repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    margin: 0 1px 1px 0;
+}
+.tastygoGrad:active, .redButtonGrad:active, #buttonGradient:active {
+    background: -moz-linear-gradient(100% 100% 90deg, #F40017, #B50025) repeat scroll 0 0 transparent;
+    margin: 1px 0 0 1px;
+}
+.tastygoGrad::-moz-focus-inner, .tastygoGreenGrad::-moz-focus-inner, .tastygoGrad:focus, .tastygoGreenGrad:focus, .redButtonGrad:focus, .redButtonGradNew:focus, .redButtonGrad::-moz-focus-inner {
+    border: 0 none;
+}
+.borderR15, .round15 {
+    border-radius: 15px 15px 15px 15px;
+}
+.noShadow {
+    box-shadow: none;
+}
+
+.cart_icon {
+    background-position: -442px -30px;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    right: 6px;
+    vertical-align: middle;
+    width: 16px;
+}
+.marginRight5 {
+    margin-right: 5px;
+}
+
+.addMoreShpAdrsBg, .greytastygoButton {
+    color: #666666;
+    display: inline-block;
+    padding: 7px 15px;
+    text-shadow: 0 0 0 transparent, 0 -1px 1px rgba(255, 255, 255, 0.4);
+}
+.addMoreShpAdrsBg:hover, .greytastygoButton:hover {
+    color: #666666;
+}
+.canbutFromFeed {
+    color: #666666;
+    float: left;
+    font-size: 11px;
+    height: 12px;
+    line-height: 11px;
+    padding: 7px 12px;
+    width: 38px;
+}
+
+
+.image-grid {
+  margin: -20px 0 0 -40px;
+  padding-left: 40px;
+  width: 100%;
+}
+
+.image-grid:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.image-grid li {
+  width: 128px;
+  margin: 20px 0 0 35px;
+  float: left;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 17px;
+  color: #686f74;
+  height: 177px;
+  overflow: hidden;
+}
+
+.image-grid li img,
+.image-grid li strong {
+  display: block;
+}
+
+.image-grid li strong {
+  color: #fff;
+}
+.fbconnectFacebook .crossIcon {
+    left: -12px;
+    top: -8px;
+}
+.fbyesnolight .crossIcon {
+    left: -12px;
+    top: -8px;
+}
+.modal {
+    left: 50%;
+    position: fixed;
+    top: 100px !important;
+    visibility: hidden;
+    z-index: 1002;
+}
+.modal-bg {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.crossIcon {
+    background-position: -164px -66px;
+    cursor: pointer;
+    display: inline-block;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    z-index: 3000;
+}
+
+.commentclose
+  {
+      background: url(../images/tastygo_images.png) no-repeat scroll 0 0 transparent;
+    background-position: -164px -66px !important;
+    cursor: pointer;
+    display: inline-block;
+    height: 29px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 30px;
+    z-index: 3000;
+    
+    }
+
+.fbFeedbackContent .fbFeedbackPosts
+{
+    overflow:auto !important;
+    }
+
+#tastygoModalContent {
+    border-radius: 12px 12px 12px 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 8px 0 0 14px;
+    padding: 15px;
+    width: 520px;
+}
+#tastygoModalContent {
+    background: none repeat scroll 0 0 white;
+    width: 555px;
+    height:375px; overflow:auto;
+}
+#tastygoModalContent .commentToolHeader .imageCt {
+    float: left;
+}
+#tastygoModalContent .commentToolHeader .imageCt img {
+    width: 120px;
+}
+#tastygoModalContent .commentToolHeader .content {
+    float: left;
+    margin: 10px;
+    width:350px;
+    margin-bottom:30px;
+}
+#tastygoModalContent .commentToolHeader .content h3 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+}
+#tastygoModalContent .commentToolHeader .content span {
+    color: #333333;
+    display: inline;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.leftBlock {
+    overflow: hidden;
+    position: relative;
+    width: 615px;
+}
+.floatLeft {
+    float: left;
+}
+
+.imgContainer {
+    height: 612px;
+    position: relative;
+    text-align: center;
+    width: 612px;
+}
+.imgButtons {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.iDelImg, .iEditImg, .iSpmImg {
+    background: none repeat scroll 0 0 #DD0017;
+    border-radius: 25px 25px 25px 25px;
+    display: inline-block;
+    height: 26px;
+    margin: 2px;
+    padding: 0 !important;
+    text-indent: -9999px;
+    width: 26px;
+}
+.iDelImg:hover, .iEditImg:hover, .iSpmImg:hover {
+    cursor: pointer;
+}
+.imgButtons a span {
+    display: block;
+}
+.imgButtons .iSpmImgIn {
+    background-position: -64px -51px;
+    height: 9px;
+    margin-left: 11px;
+    margin-top: 10px;
+    width: 9px;
+}
+
+.rBcomntCount {
+    line-height: 24px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.rBcomntCount {
+    line-height: 24px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+.rBcomntCount .comnt {
+    background-position: -119px -26px;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    margin-right: 7px;
+    width: 19px;
+}
+
+.color999 {
+    color: #999999;
+}
+strong, th {
+    font-weight: bold;
+}
+.imgtastygoCount .tastygoIcon, .fb_comments_count, .tastygoSeprator {
+    vertical-align: top;
+}
+.viewCmnttastygo li .tastygoName, .viewCmnttastygo li .viewName, .viewCmnttastygo li .comntName, .comntName {
+    color: #999999;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.rightBlock {
+    padding-left: 18px;
+    width: 306px;
+}
+.floatLeft {
+    float: left;
+}
+.rightBlock h2 {
+    color: #333333;
+    font-size: 22px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #CCCCCC;
+    font-weight: bold;
+    line-height: 1em;
+    padding: 0 0 8px;
+    text-align: left;
+}
+.rightBlock h2 {
+    color: #333333;
+    font-size: 22px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #CCCCCC;
+    font-weight: bold;
+    line-height: 1em;
+    padding: 0 0 8px;
+    text-align: left;
+}
+.addedVia a {
+    color: #999999;
+    text-decoration: underline;
+}
+.addedVia a {
+    color: #999999;
+    text-decoration: underline;
+}
+.moreImgDetails .blockquote {
+    background-position: -109px -51px;
+    display: inline-block;
+    padding: 6px 6px 6px 4px;
+}
+.marginRight5 {
+    margin-right: 5px;
+}
+.viewCmnttastygo {
+    border-bottom: 1px dotted #606060;
+    border-top: 1px dotted #606060;
+    margin: 16px 0;
+    overflow: hidden;
+    padding: 16px 0;
+}
+ul, ol {
+    list-style: none outside none;
+}
+.viewCmnttastygo li {
+    float: left;
+    padding-right: 3px;
+    width: 97px;
+}
+.viewCmnttastygo .viewIcon {
+    background-position: -161px -26px;
+    height: 17px;
+    margin-top: 6px;
+    width: 24px;
+}
+.viewCmnttastygo .icon {
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+.viewCount, .tastygoCount, .comntCount {
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+}
+.viewCmnttastygo li .tastygoName, .viewCmnttastygo li .viewName, .viewCmnttastygo li .comntName, .comntName {
+    color: #999999;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.viewCmnttastygo a {
+    color: #333333;
+    text-transform: uppercase;
+}
+.viewCmnttastygo .tastygoIcon {
+    background-position: -141px -29px;
+    height: 17px;
+    margin-top: 9px;
+    width: 18px;
+}
+.viewCmnttastygo .icon {
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+.viewCmnttastygo .comntIcon {
+    background-position: -119px -28px;
+    height: 20px;
+    margin-top: 7px;
+    width: 19px;
+}
+.viewCmnttastygo .icon {
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+.viewCount, .tastygoCount, .comntCount {
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.viewCmnttastygo li .tastygoName, .viewCmnttastygo li .viewName, .viewCmnttastygo li .comntName, .comntName {
+    color: #999999;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.viewCmnttastygo .tastygoIcon.selected, .viewCmnttastygo .tastygoIcon:hover {
+    background-position: -322px -29px;
+}
+.viewCmnttastygo .comntIcon:hover {
+    background-position: -335px -304px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

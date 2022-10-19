@@ -1,0 +1,5 @@
+﻿/*============= Start AJAX Processing Box =====================*/
+#loadingBoxss{position: absolute;top: 40%;left: 40%;background-color: #ffffff;height: 50px;width: 250px;text-align: center; font-size: 16px;}
+
+#loadingBox{position: absolute;top: 40%;left: 40%;background-color: #ffffff;height: 50px;width: 250px;text-align: center;padding-top: 20px;border-right: dodgerblue 3px solid;border-top: dodgerblue 3px solid;font-weight: bold;font-size: 16px;border-left: dodgerblue 3px solid;border-bottom: dodgerblue 3px solid;}
+ 

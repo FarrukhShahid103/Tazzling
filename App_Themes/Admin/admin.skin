@@ -1,0 +1,6 @@
+<asp:Image runat="server" Imageurl="images/spinner.gif" skinid="Spinner" />
+<asp:Image runat="server" Imageurl="images/add.gif" skinid="AddNew" />
+<asp:Image runat="server" Imageurl="images/edit_pencil.gif" skinid="Edit" />
+<asp:Label runat="server" Font-Bold="true" skinid="AddNew"/>
+<asp:Label runat="server" Font-Bold="true" ForeColor="#666666" skinid="Edit"/>
+<asp:Label runat="server" SkinID="FormIntruction"/>

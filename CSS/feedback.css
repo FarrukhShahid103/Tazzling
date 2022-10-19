@@ -1,0 +1,330 @@
+﻿.panel {
+position:fixed;
+top: 63px;
+left: 0;
+display: none;
+background: #000000;
+border:1px solid #111111;
+-moz-border-radius-topright: 20px;
+-webkit-border-top-right-radius: 20px;
+-moz-border-radius-bottomright: 20px;
+-webkit-border-bottom-right-radius: 20px;
+width: 300px;
+height: auto;
+padding: 10px 0 10px 60px;
+filter: alpha(opacity=85);
+opacity: .85;
+z-index:150;
+color:White;
+}
+
+.panel p{
+margin: 0 0 10px 0;
+padding: 0;
+color: #cccccc;
+}
+
+.panel a, .panel a:visited{
+margin: 0;
+padding: 0;
+color: #9FC54E;
+text-decoration: none;
+border-bottom: 1px solid #9FC54E;
+}
+
+.panel a:hover, .panel a:visited:hover{
+margin: 0;
+padding: 0;
+color: #ffffff;
+text-decoration: none;
+border-bottom: 1px solid #ffffff;
+}
+a.trigger{
+position: fixed;
+text-decoration: none;
+top: 80px; left: 0;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 94px 20px 1px 10px;
+font-weight: 700;
+background: url(../images/Btn_Open_Help.gif) 85% 55% no-repeat;
+border:0px solid #444444;
+cursor:pointer;
+
+display: block;
+}
+
+
+
+a.trigger:hover{
+position:fixed;
+text-decoration: none;
+top: 80px; left: 0;
+cursor:pointer;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 94px 22px 0px 10px;
+font-weight: 700;
+background:url(../images/Btn_Open_Help.gif) 85% 55% no-repeat;
+border:0px solid #444444;
+display: block;
+}
+
+a.active.trigger 
+{
+z-index:160;
+background:url(../images/Btn_Close_Help.gif) 85% 55% no-repeat;
+}
+
+/*Panel2 and triger2 FAQ*/
+
+.panel2 {
+position:fixed;
+top: 170px;
+right: 0px;
+display: none;
+background: #000000;
+border:1px solid #111111;
+-moz-border-radius-topleft: 20px;
+-webkit-border-top-left-radius: 20px;
+-moz-border-radius-bottomleft: 20px;
+-webkit-border-bottom-left-radius: 20px;
+width: 570px;
+height: auto;
+padding: 10px 0 10px 30px;
+filter: alpha(opacity=85);
+opacity: .85;
+z-index:150;
+color:White;
+}
+
+.panel2 p{
+margin: 0 0 10px 0;
+padding: 0;
+color: #cccccc;
+}
+
+.panel2 a, .panel2 a:visited{
+margin: 0;
+padding: 0;
+color: #fda605;
+text-decoration: none;
+border-bottom: 1px solid #fda605;
+}
+
+.panel2 a:hover, .panel2 a:visited:hover{
+margin: 0;
+padding: 0;
+color: #ffffff;
+text-decoration: none;
+border-bottom: 1px solid #ffffff;
+}
+a.trigger2{
+position: fixed;
+text-decoration: none;
+top: 300px; right: 0;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 0px 0px 1px 0px;
+font-weight: 700;
+
+background-image:url(../images/faq-out.png);
+background-repeat:no-repeat;
+width:32px;
+height:75px;
+border:0px solid #444444;
+cursor:pointer;
+
+display: block;
+}
+
+
+
+a.trigger2:hover{
+position:fixed;
+text-decoration: none;
+top: 300px; right: 0;
+cursor:pointer;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 0px 2px 0px 0px;
+font-weight: 700;
+
+background-image:url(../images/faq-out.png);
+background-repeat:no-repeat;
+width:32px;
+height:75px;
+
+border:0px solid #444444;
+display: block;
+}
+
+a.active.trigger2 
+{
+z-index:160;
+
+background-image:url(../images/faq-in.png);
+background-repeat:no-repeat;
+width:32px;
+height:75px;
+
+}
+/*End Triger2*/
+
+/*panel3 and triger2 FAQ*/
+.panel3 {
+position:fixed;
+top: 425px;
+right: 0px;
+display: none;
+background: #000000;
+border:1px solid #111111;
+-moz-border-radius-topleft: 20px;
+-webkit-border-top-left-radius: 20px;
+-moz-border-radius-bottomleft: 20px;
+-webkit-border-bottom-left-radius: 20px;
+width: 380px;
+height: auto;
+padding: 10px 0 10px 30px;
+filter: alpha(opacity=85);
+opacity: .85;
+z-index:150;
+color:White;
+}
+
+.panel3 p{
+margin: 0 0 10px 0;
+padding: 0;
+color: #cccccc;
+}
+
+.panel3 a, .panel3 a:visited{
+margin: 0;
+padding: 0;
+color: #fda605;
+text-decoration: none;
+border-bottom: 1px solid #fda605;
+}
+
+.panel3 a:hover, .panel3 a:visited:hover{
+margin: 0;
+padding: 0;
+color: #ffffff;
+text-decoration: none;
+border-bottom: 1px solid #ffffff;
+}
+a.trigger3{
+position: fixed;
+text-decoration: none;
+top: 435px; right: 0;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 0px 0px 1px 0px;
+font-weight: 700;
+
+background-image:url(../images/OurPromises-out.png);
+background-repeat:no-repeat;
+width:32px;
+height:157px;
+border:0px solid #444444;
+cursor:pointer;
+
+display: block;
+}
+
+
+
+a.trigger3:hover{
+position:fixed;
+text-decoration: none;
+top: 435px; right: 0;
+cursor:pointer;
+font-size: 16px;
+letter-spacing:-1px;
+font-family: verdana, helvetica, arial, sans-serif;
+color:#fff;
+padding: 0px 2px 0px 0px;
+font-weight: 700;
+
+background-image:url(../images/OurPromises-out.png);
+background-repeat:no-repeat;
+width:32px;
+height:157px;
+
+border:0px solid #444444;
+display: block;
+}
+
+a.active.trigger3 
+{
+z-index:160;
+
+background-image:url(../images/OurPromises-in.png);
+background-repeat:no-repeat;
+width:32px;
+height:157px;
+
+}
+/*End Triger3*/
+
+.Feedback 
+{
+display:block;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+width:280px;
+background: none repeat scroll 0 0 #666666;
+border: 1px solid #16171A;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+color: #FFFFFF;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}
+.Feedback:hover{
+border:0.2px solid #16171A;
+outline: medium none;
+box-shadow:0 0 8px #C8C8C8;
+-moz-box-shadow:0 0 8px #C8C8C8;
+-webkit-box-shadow:0 0 8px #C8C8C8;}
+.Feedback:focus{
+border: 1px solid rgba(255, 255, 255, 0.5);
+outline: medium none;
+box-shadow:0 0 10px White;
+-moz-box-shadow:0 0 10px White;
+-webkit-box-shadow:0 0 10px White;
+
+}
+
+.FeedbackError{
+border:1px solid Red;
+outline: medium none;
+box-shadow:0 0 10px Red;
+-moz-box-shadow:0 0 10px Red;
+-webkit-box-shadow:0 0 10px Red;
+
+}
+
+
+.findusFB
+{
+position: fixed;
+text-decoration: none;
+top: 80px; right: 0px;
+}
+	
+.findusTwitter
+{
+position: fixed;
+text-decoration: none;
+top: 170px; right: 0px;
+}
+

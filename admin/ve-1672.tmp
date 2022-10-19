@@ -1,0 +1,442 @@
+﻿using System;
+using System.Collections;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+using AjaxControlToolkit;
+
+public partial class addmenuitems : System.Web.UI.Page
+{
+    BLLRestaurantMenu obj = new BLLRestaurantMenu();
+    BLLRestaurantMenuItems objItems = new BLLRestaurantMenuItems();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            BindMenu();
+        }
+    }
+
+    private void BindMenu()
+    {
+        try
+        {
+            DataTable dtMenu;
+            obj.cosineID = 2;
+            ViewState["cuisineID"] = obj.cosineID;
+            dtMenu = obj.getRestaurantMenuBycuisineID();
+            if (dtMenu != null && dtMenu.Rows.Count > 0)
+            {
+                gridViewMenus.DataSource = dtMenu.DefaultView;
+                gridViewMenus.DataBind();
+            }
+        }
+        catch (Exception ex)
+        {
+            
+        }
+    }
+
+    protected void gridViewMenus_ItemCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+
+        if (e.CommandName == "DeleteCustomer")
+        {
+            Label lblcustomerid = (Label)e.Item.FindControl("lblcustomerid");
+            if (lblcustomerid != null)
+            {
+                String deleteData = "DELETE FROM custs WHERE CustomerID = '" + lblcustomerid.Text.Trim() + "'";
+
+            }
+        }
+
+        ListItemType itemType = e.Item.ItemType;
+
+        if (itemType == ListItemType.Footer)
+        {
+            if (e.CommandName == "AddCustomer")
+            {
+                TextBox txtAddMenu = (TextBox)e.Item.FindControl("txtAddMenu");
+                FileUpload fuAddMenuImage = (FileUpload)e.Item.FindControl("fuAddMenuImage");
+
+                if (txtAddMenu != null && fuAddMenuImage != null)
+                {
+                    if (txtAddMenu.Text.Trim() == String.Empty)
+                    {
+                        return;
+                    }
+
+                    if (fuAddMenuImage.FileName.Trim() == String.Empty)
+                    {
+                        return;
+                    }
+
+                    string[] strExtension = fuAddMenuImage.FileName.Split('.');
+                    string strUniqueID = Guid.NewGuid().ToString() + "." + strExtension[strExtension.Length - 1];
+                    if (ViewState["cuisineID"].ToString().Equals("2"))
+                    {
+                        fuAddMenuImage.SaveAs(AppDomain.CurrentDomain.BaseDirectory + "Takeout\\MenuTemplates\\India Food\\Images\\" + strUniqueID);
+                    }
+
+                    obj.cosineID = Convert.ToInt64(ViewState["cuisineID"]);
+                    obj.foodType = txtAddMenu.Text.Trim();
+                    obj.foodImage = strUniqueID;
+                    obj.createRestaurantMenu();
+                }
+            }
+        }
+        BindMenu();
+    }
+
+    protected void gridViewMenus_CancelCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+        gridViewMenus.ShowFooter = true;
+        gridViewMenus.EditItemIndex = -1;
+        BindMenu();
+    }
+
+    protected void gridViewMenus_EditCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+        //lblError.Text = String.Empty;
+        gridViewMenus.ShowFooter = false;
+        gridViewMenus.EditItemIndex = e.Item.ItemIndex;
+        BindMenu();
+        Label lblMenu = (Label)e.Item.FindControl("lblMenu");
+        Label lblCountry = (Label)e.Item.FindControl("lblCountry");
+        if (lblMenu != null && lblCountry != null)
+        {
+            this.ViewState["Customer"] = lblMenu.Text.Trim();
+            this.ViewState["Country"] = lblCountry.Text.Trim();
+        }
+    }
+
+    protected void gridViewMenus_UpdateCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+        //lblError.Text = String.Empty;
+        if (ListItemType.EditItem == e.Item.ItemType)
+        {
+            Label lblcustomerid = (Label)e.Item.FindControl("lblcustomerid");
+            String customerid = lblcustomerid.Text.Trim();
+            TextBox txtCustomer = (TextBox)e.Item.FindControl("txtCustomer");
+            FileUpload fuMenuImage = (FileUpload)e.Item.FindControl("fuMenuImage");
+            if (txtCustomer != null && fuMenuImage != null)
+            {
+                if (txtCustomer.Text.Trim() == String.Empty)
+                {
+                    return;
+                }
+
+                if (fuMenuImage.FileName.Trim() == String.Empty)
+                {
+                    return;
+                }
+
+                String updateData = "UPDATE custs set CompanyName = '" + txtCustomer.Text.Trim() + "', Country = '" + fuMenuImage.FileName.Trim() + "' WHERE CustomerID = '" + lblcustomerid.Text.Trim() + "'";
+
+                
+                gridViewMenus.EditItemIndex = -1;
+                gridViewMenus.ShowFooter = true;
+                BindMenu();
+            }
+        }
+    }
+
+    protected void gridViewMenus_ItemDataBound(object sender, System.Web.UI.WebControls.DataGridItemEventArgs e)
+    {
+        Control container = e.Item;
+        ListItemType itemType = e.Item.ItemType;
+
+        if (itemType == ListItemType.Item || itemType == ListItemType.Footer || itemType == ListItemType.AlternatingItem)
+        {
+            if (e.Item.DataItem == null)
+            {
+                return;
+            }
+
+            HtmlImage btnExpandButton = (HtmlImage)container.FindControl("image_");
+            if (btnExpandButton != null)
+            {
+                btnExpandButton.Attributes.Add("OnClick", "Toggle('ctl00_ContentPlaceHolder1_gridViewMenus_ctl0" + (e.Item.ItemIndex + 2) + "_divOrders', 'ctl00_ContentPlaceHolder1_gridViewMenus_ctl0" + (e.Item.ItemIndex + 2) + "_image_');");
+            }
+            System.Web.UI.WebControls.LinkButton btnDeleteCustomer;
+            btnDeleteCustomer = (System.Web.UI.WebControls.LinkButton)e.Item.FindControl("btnDeleteCustomer");
+            if (btnDeleteCustomer != null)
+            {
+                btnDeleteCustomer.Attributes.Add("onclick", "return confirm('Are you sure you want to delete?')");
+            }
+
+            DataGrid gridViewItems = (DataGrid)container.FindControl("gridViewItems");
+
+            String customerid = String.Empty;
+            if (null != gridViewItems)
+            {
+                Label lblcustomerid = (Label)e.Item.FindControl("lblcustomerid");
+                customerid = lblcustomerid.Text.Trim();
+
+                Button btnMenuID = (Button)container.FindControl("btnMenuID");
+                if (btnMenuID != null)
+                {
+                    btnMenuID.CommandArgument = customerid;
+                    this.ViewState["customerid"] = customerid;
+                }
+
+                objItems.foodTypeId = Convert.ToInt64(lblcustomerid.Text.ToString());
+                DataTable data = objItems.getRestaurantMenuItemsByFoodTypeID();
+   
+                gridViewItems.DataSource = data;
+                gridViewItems.DataBind();
+            }
+        }
+    }
+
+    protected void gridViewItems_ItemDataBound(object sender, System.Web.UI.WebControls.DataGridItemEventArgs e)
+    {
+        Control container = e.Item;
+        ListItemType itemType = e.Item.ItemType;
+
+        if (itemType == ListItemType.Item || itemType == ListItemType.AlternatingItem)
+        {
+            if (e.Item.DataItem == null)
+            {
+                return;
+            }
+        }
+        else if (itemType == ListItemType.Footer)
+        {
+
+            if (this.ViewState["customerid"] != null)
+            {
+                ImageButton btnAddOrders = (ImageButton)e.Item.FindControl("btnAddOrders");
+
+                if (btnAddOrders != null)
+                {
+
+                    btnAddOrders.CommandArgument = (String)this.ViewState["customerid"];
+                }
+            }
+            this.ViewState["customerid"] = null;
+        }
+
+        foreach (DataGridItem item in gridViewMenus.Items)
+        {
+            DataGrid gridViewItems = (DataGrid)item.FindControl("gridViewItems");
+            if (null != gridViewItems)
+            {
+                foreach (DataGridItem itemOption in gridViewItems.Items)
+                {
+                    System.Web.UI.WebControls.LinkButton btnDeleteOrders;
+                    btnDeleteOrders = (System.Web.UI.WebControls.LinkButton)itemOption.FindControl("btnDeleteOrders");
+                    if (btnDeleteOrders != null)
+                    {
+                        btnDeleteOrders.Attributes.Add("onclick", "return confirm('Are you sure you want to delete?')");
+                    }
+                }
+            }
+        }
+    }
+
+    protected void gridViewItems_ItemCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+        //lblError.Text = String.Empty;
+
+        if (e.CommandName == "DeleteOrders")
+        {
+            Label lblOrdersId = (Label)e.Item.FindControl("lblOrdersId");
+            if (lblOrdersId != null)
+            {
+                String OrdersId = lblOrdersId.Text.Trim();
+                String deleteData = "DELETE FROM ords WHERE OrderId = '" + lblOrdersId.Text.Trim() + "'";
+
+                //SqlCommand delete = new SqlCommand(deleteData, ContactMgmt);
+                //ContactMgmt.Open();
+                //int str = delete.ExecuteNonQuery();
+                //ContactMgmt.Close();
+                bindOrderData();
+                BindMenu();
+            }
+        }
+
+
+        if (e.CommandName == "AddOrders")
+        {
+            TextBox txtAddShipName = (TextBox)e.Item.FindControl("txtAddShipName");
+            TextBox txtAddShipCity = (TextBox)e.Item.FindControl("txtAddShipCity");
+            if (txtAddShipName.Text.Trim() == String.Empty)
+            {
+                //lblError.Text = "Ship name can not be blank";
+                return;
+            }
+            if (txtAddShipCity.Text.Trim() == String.Empty)
+            {
+                //lblError.Text = " Ship city can not be blank";
+                return;
+            }
+
+            if (e.CommandArgument.ToString() != String.Empty)
+            {
+                String addData = "INSERT INTO Ords (OrderId, CustomerId, ShipName, ShipCity) VALUES ('" +
+                    Guid.NewGuid() + "','" + new Guid(e.CommandArgument.ToString()) + "','" + txtAddShipName.Text.Trim() + "','" + txtAddShipCity.Text.Trim() + "')";
+
+                //SqlCommand add = new SqlCommand(addData, ContactMgmt);
+                //ContactMgmt.Open();
+                //int str = add.ExecuteNonQuery();
+                //ContactMgmt.Close();
+
+                bindOrderData();
+                BindMenu();
+            }
+        }
+    }
+
+    protected void gridViewItems_CancelCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+        //lblError.Text = String.Empty;
+        foreach (DataGridItem item in gridViewMenus.Items)
+        {
+            DataGrid gridViewItems = (DataGrid)item.FindControl("gridViewItems");
+            if (null != gridViewItems)
+            {
+                gridViewItems.ShowFooter = true;
+                gridViewItems.EditItemIndex = -1;
+            }
+        }
+        bindOrderData();
+        BindMenu();
+    }
+
+    protected void gridViewItems_EditCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+        //lblError.Text = String.Empty;
+        Label lblCustomerIdForOders = (Label)e.Item.FindControl("lblCustomerIdForOders");
+        if (lblCustomerIdForOders != null)
+        {
+            foreach (DataGridItem item in gridViewMenus.Items)
+            {
+                DataGrid gridViewItems = (DataGrid)item.FindControl("gridViewItems");
+                gridViewItems.ShowFooter = false;
+                gridViewItems.EditItemIndex = -1;
+                if (lblCustomerIdForOders.Text == item.Cells[0].Text)
+                {
+                    if (null != gridViewItems)
+                    {
+                        gridViewItems.EditItemIndex = e.Item.ItemIndex;
+                    }
+                }
+            }
+        }
+
+        bindOrderData();
+
+        Label lblShipName = (Label)e.Item.FindControl("lblShipName");
+        Label lblShipCity = (Label)e.Item.FindControl("lblShipCity");
+        if (lblShipName != null && lblShipCity != null)
+        {
+            this.ViewState["ElementOptionText"] = lblShipName.Text.Trim();
+            this.ViewState["ElementOptionScore"] = lblShipCity.Text.Trim();
+        }
+    }
+
+    protected void gridViewItems_UpdateCommand(object source, System.Web.UI.WebControls.DataGridCommandEventArgs e)
+    {
+        //lblError.Text = String.Empty;
+        if (ListItemType.EditItem == e.Item.ItemType)
+        {
+            //LazyTransaction transaction = new LazyTransaction();
+            Label lblOrdersId = (Label)e.Item.FindControl("lblOrdersId");
+            String ordersId = lblOrdersId.Text.Trim();
+            TextBox txtShipName = (TextBox)e.Item.FindControl("txtShipName");
+            TextBox txtShipCity = (TextBox)e.Item.FindControl("txtShipCity");
+            if (txtShipName != null && txtShipCity != null)
+            {
+                if (txtShipName.Text.Trim() == String.Empty)
+                {
+                    //lblError.Text = "Ship name can not be blank";
+                    return;
+                }
+                if (txtShipCity.Text.Trim() == String.Empty)
+                {
+                    //lblError.Text = "Ship city can not be blank";
+                    return;
+                }
+
+
+                objItems.menuItemId = Convert.ToInt64(ordersId);
+                
+                objItems.updateRestaurantMenuItems();
+
+                //String updateData = "UPDATE ords set ShipName = '" + txtShipName.Text.Trim() + "', ShipCity = '" + txtShipCity.Text.Trim() + "' WHERE OrderId = '" + lblOrdersId.Text.Trim() + "'";
+
+
+                //SqlCommand update = new SqlCommand(updateData, ContactMgmt);
+                //ContactMgmt.Open();
+                //int str = update.ExecuteNonQuery();
+                //ContactMgmt.Close();
+
+                //lblError.Text = String.Empty;
+
+                foreach (DataGridItem item in gridViewMenus.Items)
+                {
+                    DataGrid gridViewItems = (DataGrid)item.FindControl("gridViewItems");
+                    if (null != gridViewItems)
+                    {
+                        gridViewItems.ShowFooter = true;
+                        gridViewItems.EditItemIndex = -1;
+                        bindOrderData();
+                    }
+                }
+            }
+            BindMenu();
+        }
+    }
+
+    protected void gridViewMenus_ItemCreated(object sender, System.Web.UI.WebControls.DataGridItemEventArgs e)
+    {
+        DataGrid gridViewItems = (DataGrid)e.Item.FindControl("gridViewItems");
+        if (null != gridViewItems)
+        {
+            gridViewItems.ItemDataBound += new DataGridItemEventHandler(this.gridViewItems_ItemDataBound);
+            gridViewItems.ItemCommand += new DataGridCommandEventHandler(this.gridViewItems_ItemCommand);
+            gridViewItems.CancelCommand += new DataGridCommandEventHandler(this.gridViewItems_CancelCommand);
+            gridViewItems.EditCommand += new DataGridCommandEventHandler(this.gridViewItems_EditCommand);
+            gridViewItems.UpdateCommand += new DataGridCommandEventHandler(this.gridViewItems_UpdateCommand);
+        }
+    }
+    private void bindOrderData()
+    {
+        foreach (DataGridItem item in gridViewMenus.Items)
+        {
+            DataGrid gridViewItems = (DataGrid)item.FindControl("gridViewItems");
+            if (null != gridViewItems)
+            {
+                objItems.foodTypeId = Convert.ToInt64(item.Cells[0].Text.Trim());
+                DataTable data = objItems.getRestaurantMenuItemsByFoodTypeID();
+                //SqlDataAdapter adapter = new SqlDataAdapter(
+                //    "SELECT orderid, customerid as id, shipname, shipcity FROM Ords WHERE CustomerID = '" + item.Cells[0].Text.Trim() + "'",
+                //    System.Configuration.ConfigurationManager.ConnectionStrings["CRMConnectionString"].ToString());
+                //DataSet data = new DataSet();
+                //adapter.Fill(data);
+
+                gridViewItems.DataSource = data;
+                gridViewItems.DataBind();
+            }
+        }
+    }
+
+    protected void btnSave_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    protected void btnAddNewMore_Click(object sender, EventArgs e)
+    {
+
+    }
+}

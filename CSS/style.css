@@ -1,0 +1,704 @@
+/* Circular Content Carousel Style */
+
+/*
+	Mosaic - Sliding Boxes and Captions jQuery Plugin
+	Version 1.0.1
+	www.buildinternet.com/project/mosaic
+	
+	By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+	Released under MIT License / GPL License
+*/
+
+h4{ font:300 16px ; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }	
+h5
+{
+	 color: #FFFFFF;
+    font: 300 16px/140% 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-shadow: 1px 1px 0 #000000;
+    
+	}	
+	
+	
+	.featuredcampaingheading{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    left: 0;
+    padding: 15px 13px 13px 15px;
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    z-index:6;
+    color:White;
+}
+
+.campaingheadingTop{					
+	background:url(../images/bg-black.png);
+	background-repeat:repeat-x;		
+    left: 0;
+    padding: 10px 13px 10px 15px;
+    position: absolute;
+    top: 0;
+    width: 290px;
+    z-index:6;
+    color:White;
+}
+
+.campaingheadingBottom{	
+	background:url(../images/bg-black.png);
+	background-repeat:repeat-x;		
+    left: 0;
+    padding: 10px 13px 10px 15px;
+    position: absolute;
+    bottom: 0;
+    width: 207px;
+    z-index:6;
+    color:White;
+}
+
+
+.campaingheadingBottomDeals{	
+	background:url(../images/bg-black.png);
+	background-repeat:repeat-x;		
+    left: 0;
+    padding: 10px 13px 10px 15px;
+    position: absolute;
+    bottom: -50;
+    width: 290px;
+    z-index:6;
+    color:White;
+}
+			
+			
+a{ text-decoration:none; }
+
+.details{ margin-left:10px; margin-right:10px; margin-top:13px; }
+
+.details2{ margin-left:10px; margin-right:10px;}
+
+.details3{ margin-left:5px; margin-right:5px;}
+
+/*General Mosaic Styles*/
+.mosaic-block {
+	float:left;
+	position:relative;
+	overflow:hidden;
+	width:235px;	
+	height:201px;
+	margin:0px;
+	background:#111 url(../images/LoaderWhite.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-block2 {
+	float:left;
+	margin-top:10px !important;
+	position:relative;
+	overflow:hidden;
+	width:318px;	
+	height:272px;
+	margin:0px;
+	background:#111 url(../images/LoaderWhite.gif) no-repeat center center;
+	border:1px solid #fff;
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+}
+
+.mosaic-block3 {
+	float:left;
+	margin-top:5px !important;
+	position:relative;
+	/*overflow:hidden;*/
+	width:316px;
+	height:230px;
+	margin:0px;
+	background:#111 url(../images/LoaderWhite.gif) no-repeat center center;	
+	-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.2);
+	border-radius:5px 5px 0px 0px;
+}
+
+	.mosaic-backdrop {
+		display:none;
+		position:absolute;
+		text-align:center;
+		vertical-align:text-top;
+		top:0;
+		height:100%;
+		width:100%;
+		/*background:url(../images/bg-black.png);
+		background-repeat:repeat-x;		*/
+		background-color:White;
+	}
+	
+	.mosaic-overlay {
+		display:none;
+		z-index:5;
+		position:absolute;
+		width:100%;
+		height:100%;
+		background:url(../images/bg-black.png);
+		background-repeat:repeat-x;		
+	}
+	
+		/*** Custom Animation Styles (You can remove/add any styles below) ***/
+		.circle .mosaic-overlay {
+			background:url(../images/hover-magnify.png) no-repeat center center;
+			opacity:0;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+			filter:alpha(opacity=00);
+			display:none;
+		}
+		
+		.fade .mosaic-overlay {			
+			background:url(../images/bg_gray.png);
+			background-repeat:repeat-x;
+		}
+		
+		.bar .mosaic-overlay 
+		{
+			color:White;			
+			font-size:13px;
+			font-style:italic;			
+			left:0px;
+			bottom:-100px;
+			height:28px;
+			background:url(../images/bg_gray.png);
+			background-repeat:repeat-x;
+		}
+		
+		.bar2 .mosaic-overlay {
+			bottom:-50px;
+			left:0px;
+			height:100px;
+		}
+		
+			.bar2 .mosaic-overlay:hover {
+				
+			}
+		
+		.bar3 .mosaic-overlay 
+		{
+			color:White;
+			font-size:17px;						
+			left: 0;		
+			position: absolute;
+			bottom: 0;
+			width: 235px;
+			height:50px;
+			z-index:6;
+			color:White;			
+		}
+		
+		.bar4 .mosaic-overlay 
+		{
+			color:White;			
+			font-size:11px;
+			font-style:italic;			
+			left:0px;
+			top:-100px;						
+			height:28px;			
+			background:url(../images/bg_gray.png);
+			background-repeat:repeat-x;
+		}
+		
+		.bar5 .mosaic-overlay 
+		{
+			color:White;			
+			font-size:11px;
+			font-style:italic;			
+			left:0px;
+			top:-100px;						
+			height:28px;
+			/*opacity:0.8;			
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+			filter:alpha(opacity=80);*/
+			background:url(../images/discountBG.png);
+			background-repeat:repeat-x;
+		}
+		
+		
+		.ShopDiscountBanner
+		{
+		    /*top:-5px;*/
+
+			padding-top:8px;
+			margin-left:15px;
+			margin-top:-4px;
+			text-align:center;
+			position: absolute;
+			left: 0;
+			color:White;
+			font-size:15px;
+			background-image:url(../Images/discountImage.png); 
+			background-repeat:no-repeat;
+			height:48px;
+			width:54px;
+			}
+		/*** End Animation Styles ***/
+
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h5,h6,pre,form,fieldset,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+
+
+a{
+	color:#000;
+	text-decoration:none;
+}
+.clr{
+	clear:both;
+}
+h1, h5{
+	margin:15px;
+	font-size:44px;
+	color:#000;
+	font-family: 'Rochester', sans-serif;
+	text-shadow:1px 1px 1px #fff;
+	text-align:center;
+}
+h1 span, h5{
+	font-size:20px;
+	display:block;
+	color:#60817a;
+}
+/* Header Style */
+.header{
+	height:25px;
+	line-height:24px;
+	font-size:13px;
+	background:#000;	
+	text-transform:uppercase;
+	z-index:4;
+}
+.header a{
+	padding:5px 10px;
+	letter-spacing:1px;
+	text-shadow:1px 1px 1px #000;
+	color:#ddd;
+	text-align:right;
+}
+.header a:hover{
+	color:#fff;
+}
+.header a span{
+	font-weight:bold;
+}
+.header span.right_ab{
+	position:absolute;
+	right:4px;
+}
+
+
+.ca-container{
+	position:relative;
+	margin:5px auto 5px auto;
+	width:980px;
+	height:208px;
+}
+.ca-wrapper{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.ca-item{
+	position:relative;
+	float:left;
+	width:245px;
+	height:100%;
+	text-align:center;
+}
+.ca-more{
+	position: absolute;
+	top: 10px;
+	right:0px;
+	padding:4px 15px;
+	font-weight:bold;
+	background: #ff42e7;
+	text-align:center;
+	color: white;	
+	font-style:italic;
+	text-shadow:1px 1px 1px #897c63;
+}
+.ca-close{
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:#fff url(../images/cross.png) no-repeat center center;
+	width:27px;
+	height:27px;
+	text-indent:-9000px;
+	outline:none;
+	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	opacity:0.7;
+}
+.ca-close:hover{
+	opacity:1.0;
+}
+.ca-item-main{	
+	position:absolute;
+	top:5px;
+	left:5px;
+	right:5px;
+	bottom:5px;
+	background:#fff;
+	overflow:hidden;
+	-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+	box-shadow:1px 1px 2px rgba(0,0,0,0.2);
+}
+.ca-icon{
+	width:233px;
+	height:189px;
+	position:relative;
+	margin:0 auto;
+	background:transparent url(../images/animal1.png) no-repeat center center;
+}
+.ca-item-2 .ca-icon{
+	background-image:url(../images/animal2.png);
+}
+.ca-item-3 .ca-icon{
+	background-image:url(../images/animal3.png);
+}
+.ca-item-4 .ca-icon{
+	background-image:url(../images/animal4.png);
+}
+.ca-item-5 .ca-icon{
+	background-image:url(../images/animal5.png);
+}
+.ca-item-6 .ca-icon{
+	background-image:url(../images/animal6.png);
+}
+.ca-item-7 .ca-icon{
+	background-image:url(../images/animal7.png);
+}
+.ca-item-8 .ca-icon{
+	background-image:url(../images/animal8.png);
+}
+.ca-item h3{
+	font-family: 'Coustard', sans-serif;
+	text-transform:uppercase;
+	font-size:30px;
+	color:#000;
+	margin-bottom:20px;
+	height:85px;
+	text-align:center;
+	text-shadow: 0px 1px 1px #e4ebe9;
+}
+.ca-item h4{		
+	font-size:13px;
+	text-align:left;	
+	font-weight:700;	
+	line-height:normal;
+	position:relative;
+}
+.ca-item h4 span{
+	text-indent:40px;
+	display:block;
+}
+.ca-item h4  span.ca-quote{
+	color:#f4eee3;
+	font-size:100px;
+	position:absolute;
+	top:20px;
+	left:0px;
+	text-indent:0px;
+}
+.ca-content-wrapper{
+	background:#b0ccc6;
+	position:absolute;
+	width:0px; /* expands to width of the wrapper minus 1 element */
+	height:200px;
+	top:5px;
+	text-align:left;
+	z-index:10000;
+	overflow:hidden;
+}
+.ca-content{
+	width:660px;
+	overflow:hidden;
+}
+.ca-content-text{
+	font-size: 14px;
+	font-style: italic;	
+	margin:10px 20px;
+	padding:10px 20px;
+	line-height:24px;
+}
+.ca-content-text p{
+	padding-bottom:5px;
+}
+.ca-content h6{
+	margin:25px 20px 0px 35px;
+	font-size:32px;
+	padding-bottom:5px;
+	color:#000;
+	font-family: 'Coustard', sans-serif;
+	color:#60817a;
+	border-bottom:2px solid #99bcb4;
+	text-shadow: 1px 1px 1px #99BCB4;
+}
+.ca-content ul{
+	margin:20px 35px;
+	height:30px;
+}
+.ca-content ul li{
+	float:left;
+	margin:0px 2px;
+}
+.ca-content ul li a{
+	color:#fff;
+	background:#000;
+	padding:3px 6px;
+	font-size:14px;	
+	font-style:italic;
+}
+.ca-content ul li a:hover{
+	background:#fff;
+	color:#000;
+	text-shadow:none;
+}
+.ca-nav span{
+	width:25px;
+	height:38px;
+	background:transparent url(../images/arrows.png) no-repeat top left;
+	position:absolute;
+	top:50%;
+	margin-top:-19px;
+	opacity:0.7;
+	left:2px;
+	text-indent:-9000px;	
+	cursor:pointer;
+	z-index:100;
+}
+.ca-nav span.ca-nav-next{
+	background-position:top right;
+	left:auto;
+	right:2px;
+}
+
+.ca-nav span:hover
+{	
+	opacity:1.0;
+}
+
+
+/*
+
+	GalleryView Stylesheet
+	
+	Use the CSS rules below to modify the look of your gallery.
+	 
+	To create additional rules, use the markup below as a guide to GalleryView's architecture.
+*/
+
+/* GALLERY LIST */
+/* IMPORTANT - Change '#myGallery' to the ID of your gallery list to prevent a flash of unstyled content */
+#myGallery { display: none; }
+
+.gv_galleryWrap { position: relative; font-size: 10pt; }
+
+/* GALLERY DIV */
+.gv_gallery { overflow: hidden; position: relative;}
+
+.gv_imageStore { visibility: hidden; position: absolute; top: -10000px; left: -10000px; }
+
+
+/*************************************************/
+/**   PANEL STYLES								**/
+/*************************************************/
+
+.gv_panelWrap { filter: inherit; position: absolute; overflow: hidden; }
+
+.gv_panel-loading { background: url(../images/LoaderWhite.gif) 50% 50% no-repeat #aaa; }
+.gv_frame-loading { background: url(../images/LoaderWhite.gif) 50% 50% no-repeat #aaa; }
+
+/* GALLERY PANELS */
+.gv_panel { filter: inherit; position: absolute; top: 0; left: 0; overflow: hidden; z-index: 100; }
+.gv_panel img { position: absolute; }
+
+.gv_overlay { position: absolute; color: white; z-index: 200; }
+.gv_showOverlay { 
+	position: absolute; 
+	width: 20px; 
+	height: 20px; 
+	background: url(../images/info.png) #222; 
+	cursor: pointer;
+	z-index: 200;
+}
+.gv_overlay h4 { color: white; margin: 1em; font-weight: bold; }
+.gv_overlay p { color: white; margin: 1em; }
+
+.gv_infobar {
+	background: #222;
+	padding: 0 0.5em;
+	line-height: 1.5em;
+	height: 1.5em;
+	font-size: 10pt;
+	font-weight: bold;
+	color: white;
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+	vertical-align: middle;
+	z-index: 2000;
+	
+}
+
+
+/*************************************************/
+/**   FILMSTRIP STYLES							**/
+/*************************************************/
+
+.gv_filmstripWrap { overflow: hidden; position: absolute; }
+
+
+/* FILMSTRIP */
+.gv_filmstrip { margin: 0; padding: 0; position: absolute; top: 0; left: 0; }
+
+/* FILMSTRIP FRAMES (contains both images and captions) */
+.gv_frame { 
+	cursor: pointer;
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+/* WRAPPER FOR FILMSTRIP IMAGES */
+.gv_frame .gv_thumbnail { position: relative;overflow: hidden !important; }
+
+/* WRAPPER FOR CURRENT FILMSTRIP IMAGE */
+.gv_frame.current .gv_thumbnail {}
+
+/* FRAME IMAGES */
+.gv_frame img { border: none; position: absolute; }
+
+/* FRAME CAPTION */
+.gv_frame .gv_caption { height: 14px; line-height: 14px; font-size: 10px; text-align: center; color:white; }
+
+/* CURRENT FRAME CAPTION */
+.gv_frame.current .gv_caption { }
+
+/* POINTER FOR CURRENT FRAME */
+.gv_pointer {
+	border-color: black;
+}
+
+/* NAVIGATION BUTTONS */
+.gv_navWrap {
+	text-align: center;
+	position: absolute;
+}
+.gv_navPlay,
+.gv_navPause,
+.gv_navNext,
+.gv_navPrev {
+	
+	opacity: 0.3;
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	filter:alpha(opacity=30);
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	vertical-align: middle;
+}
+.gv_navPlay:hover,
+.gv_navPause:hover,
+.gv_navNext:hover,
+.gv_navPrev:hover {
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+
+.gv_panelNavPrev,
+.gv_panelNavNext {
+	position: absolute;
+	display: none;
+	opacity: 0.50;
+	-moz-opacity: 0.50;
+	-khtml-opacity: 0.50;
+	filter:alpha(opacity=50);
+	z-index: 200;
+}
+
+.gv_panelNavPrev:hover,
+.gv_panelNavNext:hover {
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	-khtml-opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+
+.gv_navPlay {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: url(../images/play-big.png) top left no-repeat;
+}
+.gv_navPause {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background: url(../images/pause-big.png) top left no-repeat;
+}
+.gv_navNext {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(../images/next.png) top left no-repeat;
+}
+.gv_navPrev {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(../images/prev.png) top right no-repeat;
+}
+.gv_panelNavNext {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(../images/panel-next.png) top left no-repeat;
+}
+.gv_panelNavPrev {
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+	background: url(../images/panel-prev.png) top right no-repeat;
+}

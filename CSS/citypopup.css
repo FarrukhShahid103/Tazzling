@@ -1,0 +1,99 @@
+﻿.CityHeading {
+font-size:14px;
+font-family:Helvetica;
+letter-spacing:-1px;
+color:#0a3b5f;
+font-weight:400;
+text-transform:uppercase;
+margin:0;
+padding:8px 0 8px 15px;
+}
+
+.downMenu {
+
+}
+
+.menudropped {
+display:none;
+text-align:left;
+position:absolute;
+background:#055fa0;
+font-size:14px;
+font-family:Helvetica;
+width:188px;
+border:1px solid #4685b2;
+margin:10px 0 0 20px;
+padding:10px 20px 20px;
+right:0px;
+z-index:150;
+}
+
+.menudropped p.textleft {
+float:left;
+font-size:14px;
+font-family:Helvetica;
+width:205px;
+margin:10px 0 0;
+padding:0 20px 15px 10px;
+}
+
+.menudropped ul.left {
+text-align:left;
+float:left;
+font-size:14px;
+font-family:Helvetica;
+width:160px;
+margin:0;
+padding:0;
+}
+
+.menudropped ul.middle {
+text-align:left;
+float:left;
+border-left:1px solid #4685b2;
+font-family:Helvetica;
+font-size:14px;
+width:190px;
+margin:0;
+padding:0;
+}
+
+.menudropped ul.right {
+text-align:left;
+float:left;
+font-size:12px;
+font-family:Helvetica;
+width:150px;
+margin:0;
+padding:0;
+}
+
+.menudropped ul.left li, .menudropped ul.middle li
+{
+	float:none;
+}
+
+.menudropped ul.right li a,.menudropped ul.middle li a ,.menudropped ul.left li a {
+list-style-type:none;
+display:block;
+font-family:Helvetica;
+color:#ffffff;
+font-size:14px;
+font-weight:normal;
+margin:0;
+text-decoration:none;
+padding:5px 0 5px 20px;
+}
+
+.menudropped ul.right li a:hover,.menudropped ul.middle li a:hover,.menudropped ul.left li a:hover {
+list-style-type:none;
+font-family:Helvetica;
+color:#ffffff;
+display:block;
+font-size:14px;
+font-weight:normal;
+background-color:#0f81f7;
+margin:0;
+padding:5px 0 5px 20px;
+text-decoration:none;
+}

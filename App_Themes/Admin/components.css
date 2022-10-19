@@ -1,0 +1,72 @@
+﻿/* ============== Generic Styles ========================== */
+.Error{color:Red;}
+
+/* ============= Start Table Style Layout =======================*/
+.HeaderRow{background-color:#dcdcdc;}
+.GeneralRow{background-color: #ffffff;}
+.AlternatingRow{background-color: #f0f0f0;}
+.HeaderColumn{vertical-align:middle;text-align:center;border:1px solid #999999;color:#666666;font-weight:bold;height:20px;padding:5px;white-space:nowrap;}
+.RowColumn{height: 30px;border:1px solid #999999;text-align:left;vertical-align:middle; }
+.RowColumnCenter{height: 30px;border:1px solid #999999;text-align:center;vertical-align:middle;}
+.RowText{margin-top:10px;font-weight:normal;font-weight:normal;white-space:nowrap;border:solid 0px #fff;}
+/* ============= End Table Style Layout =======================*/
+
+/* -------------- Start Table ---------------------------- */
+.tableHeaderSkin{font-size: 11px;color:#fff;background-color:#6AA3CC;padding: 3px 2px 3px 2px;}
+.rowOnSkin{font-size: 11px;color:black;background-color:#fff;padding: 3px 2px 3px 2px;}
+.rowOffSkin{font-size: 11px;color:black;background-color:#E6F1F3;padding: 3px 2px 3px 2px;}
+/* -------------- End Table ---------------------------------- */
+
+/* ================= Start Form Style =======================*/
+.FormZone{min-width:800px;padding:3px;min-height:450px;}
+.FormRow{width:794px;padding:0px;}
+.FormColumnSpan{float:left; min-width:794px;padding-top:15px;}
+.FormRowRepeat{float:left; widows:750px; border-top:1px gray dashed;}
+.FormColumn1{float:left; width:200px;padding-top:15px;clear:left}
+.FormColumn2{float:left; width:400px;padding-top:15px;margin-left:10px;white-space:normal;}
+.FormColumn3{float:left; width:150px;padding-top:15px;margin-left:10px;white-space:normal;}
+/* ================= End Form Style =======================*/
+
+
+/*============= Start AJAX Processing Box =====================*/
+#loadingBox{position: absolute;top: 40%;left: 40%;background-color: #ffffff;height: 50px;width: 250px;text-align: center;padding-top: 20px;border-right: dodgerblue 3px solid;border-top: dodgerblue 3px solid;font-weight: bold;font-size: 16px;border-left: dodgerblue 3px solid;border-bottom: dodgerblue 3px solid;}
+/*============= End AJAX Processing Box =====================*/
+
+
+
+/* ============= Start Start AJAX Modal Popup =======================*/
+.modalBackground {background-color:Gray;filter:alpha(opacity=70);opacity:0.7;}
+.modalPopup {background-color:#ffffdd;border-width:3px;border-style:solid;border-color:Gray;padding:3px;width:400px;height:200px;}
+/* ----------------- End Start AJAX Modal Popup -------------------------*/
+
+/* ----------- Page Wrapper --------------------------*/
+span.modBox{width:120px;height:102px;padding:5px;border:solid 1px #dcdcdc; background:#f9f9f9;float:left;margin-left:5px;text-align:center;}
+div#toolbar-box {background: #f7f7f7;}
+div#element-box {background: #fff;}
+div#element-box div.link{cursor:pointer;color: #0B55C4;}
+div#element-box div.section-box div.m {background: #fbfbfb;}
+div.t, div.b {height: 6px;padding: 0;margin: 0;overflow: hidden;}
+div.m {border-left: 1px solid #ccc;border-right: 1px solid #ccc;padding: 0 8px;min-height: 500px;}
+div#toolbar-box div.m {padding: 0;}
+div#element-box div.m {padding: 5px 10px;}
+div#submenu-box div.t {background: url(images/round/border.png) 0 0 repeat-x;}
+div#submenu-box div.t div.t {background: url(images/round/tr_dark.png) 100% 0 no-repeat;}
+div#submenu-box div.t div.t div.t {background: url(images/round/tl_dark.png) 0 0 no-repeat;}
+div#submenu-box div.b {background: url(images/round/border.png) 0 100% repeat-x;}
+div#submenu-box div.b div.b {background: url(images/round/br_dark.png) 100% 0 no-repeat;}
+div#submenu-box div.b div.b div.b {background: url(images/round/bl_dark.png) 0 0 no-repeat;}
+div#toolbar-box,div#element-box div.section-box {background: #fbfbfb;}
+div#toolbar-box div.t,div#element-box div.section-box div.t {background: url(images/round/border.png) 0 0 repeat-x;}
+div#toolbar-box div.t div.t,div#element-box div.section-box div.t div.t {background: url(images/round/tr_med.png) 100% 0 no-repeat;}
+div#toolbar-box div.t div.t div.t,div#element-box div.section-box div.t div.t div.t {background: url(images/round/tl_med.png) 0 0 no-repeat;}
+div#toolbar-box div.b,div#element-box div.section-box div.b {background: url(images/round/border.png) 0 100% repeat-x;}
+div#toolbar-box div.b div.b,div#element-box div.section-box div.b div.b {background: url(images/round/br_med.png) 100% 0 no-repeat;}
+div#toolbar-box div.b div.b div.b,
+div#element-box div.section-box div.b div.b div.b {background: url(images/round/bl_med.png) 0 0 no-repeat;}
+div#element-box div.t {background: url(images/round/border.png) 0 0 repeat-x;}
+div#element-box div.t div.t {background: url(images/round/tr_light.png) 100% 0 no-repeat;}
+div#element-box div.t div.t div.t {background: url(images/round/tl_light.png) 0 0 no-repeat;}
+div#element-box div.b {background: url(images/round/border.png) 0 100% repeat-x;}
+div#element-box div.b div.b {background: url(images/round/br_light.png) 100% 0 no-repeat;}
+div#element-box div.b div.b div.b {background: url(images/round/bl_light.png) 0 0 no-repeat;}
+/* ----------- End page Wrapper ----------------------*/

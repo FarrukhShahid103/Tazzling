@@ -1,0 +1,170 @@
+﻿ body
+        {
+        	font-family:Helvetica;
+            background: url('../images/bgImage.jpg') no-repeat center center fixed;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            overflow: hidden;
+        }
+        
+        #page-wrap
+        {
+            background: url("../images/background.png") repeat scroll 0 0 transparent;
+            /*box-shadow: 0 0 20px black;*/
+            margin: 0 0 0 185px;
+            min-height: 100%;
+            overflow: hidden;
+            width: 715px;
+            height: 855px;
+}
+        .loginArea
+        {
+            background: url('../images/member-area-back.png') repeat;
+            width: 300px;
+            height: 320px;
+            margin-top: 200px;
+        }
+        #toptile
+        {
+            background-image: url('../Images/HeaderBG.png');
+            background-repeat:repeat-x;           
+            color: White;
+            font-family: Helvetica;
+            font-size: 24px;
+            left: 0;
+            margin: 0 auto;
+            padding-left: 20px;
+            position: fixed;
+            text-align: left;
+            top: 0;
+            width: 100%;
+            height: 60px;
+        }
+        .loginTextBox
+        {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            width: 245px;
+            height: 25px;
+            border: 1px solid #dedede;
+        }
+        
+        .loginTextBoxError
+        {
+            background-color: #F6CCDA;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            width: 245px;
+            height: 25px;
+            border: 1px solid red;
+        }
+        
+        #footerWrapper
+        {
+            bottom: 0;
+            height: 30px; /* margin: 0 auto 0 182px; */
+            position: absolute;
+            width: 715px;
+        }
+        #footer
+        {
+            background-color: #FFFFFF;
+            padding: 0 15px;
+        }
+        #push, #footer
+        {
+            clear: both;
+            height: 2em;
+        }
+        #footer ul.footerLinks
+        {
+            list-style-type: none;
+            margin: 5px;
+        }
+        .floatLeft
+        {
+            float: left;
+        }
+        #footer ul.footerLinks li
+        {
+            float: left;
+            padding-right: 11px;
+            font-family: Helvetica;
+        }
+        #footer ul.footerLinks li a
+        {
+            color: #000000;
+            font-size: 10px;
+            text-decoration: none;
+        }
+        a:link
+        {
+        }
+        a, a:active, a:visited
+        {
+            outline: 0 none;
+        }
+        
+        element.style
+        {
+            margin-left: 0;
+        }
+        #footer .copyText
+        {
+            color: #AFAFAF;
+            font-size: 10px;
+            margin: 10px;
+        }
+        .floatRight
+        {
+            float: right;
+        }
+        #footer ul.socialLinks
+        {
+            list-style-type: none;
+            margin-top: 7px;
+        }
+        #footer ul.socialLinks li
+        {
+            float: left;
+            padding-right: 5px;
+        }
+        a:link
+        {
+        }
+        .twIcon
+        {
+        }
+        .fbIcon
+        {
+            width: 20px;
+            height: 20px;
+        }
+        .TextBoxError
+        {
+            background-position: center center;
+            border: 2px solid red;
+            border-radius: 5px 5px 5px 5px;
+            padding: 12px;
+        }
+        .DropDownBG
+        {
+            background-image: url('Images/DropDownBGIndex.png');
+            background-position:center;
+            border-radius: 5px;
+            border: 2px solid #D1D6DC;
+            padding: 12px;
+        }
+       
+        .textBoxBG
+        {
+            background-image: url('images/textBoxBG.png');
+            border-radius: 5px;
+            height: 28px;
+            width: 220px;
+            border: 1px solid #D1D6DC;
+        }

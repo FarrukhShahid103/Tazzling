@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="ExcelProcessor" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DataTableToExcel(System.Data.DataTable,System.String,System.Data.OleDb.OleDbConnection)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\App_Code" File="ExcelProcessor.cs" Line="175">The query string passed to 'OleDbCommand.CommandText.set(string)' in 'ExcelProcessor.DataTableToExcel(DataTable, string, OleDbConnection)' could contain the following variables 'sb'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\App_Code" File="ExcelProcessor.cs" Line="215">The query string passed to 'OleDbCommand.CommandText.set(string)' in 'ExcelProcessor.DataTableToExcel(DataTable, string, OleDbConnection)' could contain the following variables 'sb'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExcelToDS(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\App_Code" File="ExcelProcessor.cs" Line="86">The query string passed to 'OleDbCommand.OleDbCommand(string, OleDbConnection)' in 'ExcelProcessor.ExcelToDS(string)' could contain the following variables 'tblNames.GetEnumerator().Current'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExcelToDS(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\App_Code" File="ExcelProcessor.cs" Line="45">The query string passed to 'OleDbDataAdapter.OleDbDataAdapter(string, string)' in 'ExcelProcessor.ExcelToDS(string, string)' could contain the following variables 'sql'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Misc" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DownloadImage(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\App_Code" File="Misc.cs" Line="2306">Object '_WebResponse' can be disposed more than once in method 'Misc.DownloadImage(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 2306</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_efj1z1cm.dll">
+   <Modules>
+    <Module Name="app_web_efj1z1cm.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="addmenuitems" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ZipFolder(System.Data.DataTable,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="addmenuitems.aspx.cs" Line="915">Object 'File.Create(strZipFileName)' can be disposed more than once in method 'addmenuitems.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 915</Issue>
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="addmenuitems.aspx.cs" Line="915">Object 'sOnHold' can be disposed more than once in method 'addmenuitems.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 915</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_gkze23u4.dll">
+   <Modules>
+    <Module Name="app_web_gkze23u4.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="adddealtems" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ZipFolder(System.Data.DataTable,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="adddealtems.aspx.cs" Line="869">Object 'File.Create(strZipFileName)' can be disposed more than once in method 'adddealtems.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 869</Issue>
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="adddealtems.aspx.cs" Line="869">Object 'sOnHold' can be disposed more than once in method 'adddealtems.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 869</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="addEditBusinessManagement" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DownloadImage(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="addEditBusinessManagement.aspx.cs" Line="445">Object '_WebResponse' can be disposed more than once in method 'addEditBusinessManagement.DownloadImage(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 445</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_iu1ql3oy.dll">
+   <Modules>
+    <Module Name="app_web_iu1ql3oy.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Takeout_UserControls_Templates_restaurantMenu" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ZipFolder(System.Data.DataTable,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\UserControls\restaurant" File="restaurantMenu.ascx.cs" Line="857">Object 'File.Create(strZipFileName)' can be disposed more than once in method 'Takeout_UserControls_Templates_restaurantMenu.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 857</Issue>
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\UserControls\restaurant" File="restaurantMenu.ascx.cs" Line="857">Object 'sOnHold' can be disposed more than once in method 'Takeout_UserControls_Templates_restaurantMenu.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 857</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_mtbiq0cw.dll">
+   <Modules>
+    <Module Name="app_web_mtbiq0cw.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Search_CS" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ProcessRequest(System.Web.HttpContext)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="Search_CS.ashx" Line="40">Object 'conn' can be disposed more than once in method 'Search_CS.ProcessRequest(HttpContext)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 40</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="Search_CS.ashx" Line="24">The query string passed to 'SqlCommand.CommandText.set(string)' in 'Search_CS.ProcessRequest(HttpContext)' could contain the following variables 'context.Request.QueryString["q"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_qzeqcd1n.dll">
+   <Modules>
+    <Module Name="app_web_qzeqcd1n.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="addEditBusinessManagement" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DownloadImage(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\Contract" File="addEditBusinessManagement.aspx.cs" Line="447">Object '_WebResponse' can be disposed more than once in method 'addEditBusinessManagement.DownloadImage(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 447</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_yjcrv3il.dll">
+   <Modules>
+    <Module Name="app_web_yjcrv3il.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="addEditRestaurantManagement" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DownloadImage(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\admin" File="addEditRestaurantManagement.aspx.cs" Line="741">Object '_WebResponse' can be disposed more than once in method 'addEditRestaurantManagement.DownloadImage(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 741</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_yjw2wm0f.dll">
+   <Modules>
+    <Module Name="app_web_yjw2wm0f.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Search_CS" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ProcessRequest(System.Web.HttpContext)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling" File="Search_CS.ashx" Line="40">Object 'conn' can be disposed more than once in method 'Search_CS.ProcessRequest(HttpContext)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 40</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling" File="Search_CS.ashx" Line="24">The query string passed to 'SqlCommand.CommandText.set(string)' in 'Search_CS.ProcessRequest(HttpContext)' could contain the following variables 'context.Request.QueryString["q"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\IZY01\AppData\Local\Temp\tmp2FE.tmp.cadir\bin\App_Web_yvgsszkz.dll">
+   <Modules>
+    <Module Name="app_web_yvgsszkz.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Takeout_UserControls_restaurant_restaurantDeal" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ZipFolder(System.Data.DataTable,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-10-09 14:33:25Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\UserControls\restaurant" File="restaurantDeal.ascx.cs" Line="881">Object 'File.Create(strZipFileName)' can be disposed more than once in method 'Takeout_UserControls_restaurant_restaurantDeal.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 881</Issue>
+             <Issue Certainty="75" Level="Warning" Path="e:\Uninstall\Farrukh\Project\HP Project\Tazzling\tazzling\UserControls\restaurant" File="restaurantDeal.ascx.cs" Line="881">Object 'sOnHold' can be disposed more than once in method 'Takeout_UserControls_restaurant_restaurantDeal.ZipFolder(DataTable, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 881</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 40</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

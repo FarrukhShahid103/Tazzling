@@ -1,0 +1,22 @@
+ http://www.reigndesign.com/blog/using-your-own-sqlite-database-in-android-applications/
+
+
+http://www.codeproject.com/Articles/119293/Using-SQLite-Database-with-Android
+
+
+http://yajukumar.wordpress.com/tag/how-to-create-database-in-android/
+
+
+
+
+
+barcode
+
+
+http://www.mobiledevelopersolutions.com/home/start/twominutetutorials/tmt3
+
+http://stackoverflow.com/questions/2050263/using-zxing-to-create-an-android-barcode-scanning-app
+
+
+
+http://androidadvice.blogspot.com/2010/09/app-inventor-sample-project-barcode.html

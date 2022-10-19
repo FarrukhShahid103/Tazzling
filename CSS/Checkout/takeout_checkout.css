@@ -1,0 +1,57 @@
+ul {list-style-type:decimal;  margin:0; padding:0;}
+ul li {display:block; float:left;}
+#step1, #step2, #step3, #step4{line-height:23px; padding-left:15px; color:#404040; font-weight:bold;}
+#step1 {width:200px; }
+#step2 {width:170px;}
+#step3 {width:160px;}
+#step4 {width:75px;}
+
+.step1{width:675px; height:23px; background:url(../../images/checkout/Step1.jpg) 0 0 no-repeat;}
+.step1 li#step1 {color:#fff;}
+.step2{width:675px; height:23px; background:url(../../images/checkout/step2.jpg) 0 0 no-repeat;}
+.step2 li#step2 {color:#fff;}
+.step3{width:675px; height:23px; background:url(../../images/checkout/step3.jpg) 0 0 no-repeat;}
+.step3 li#step3 {color:#fff;}
+.step4{width:675px; height:23px; background:url(../../images/checkout/step4.jpg) 0 0 no-repeat;}
+.step4 li#step4 {color:#fff;}
+
+.shippingAddress, .billingAddress {margin-top:10px;}
+.shippingAddress span, .billingAddress span {color:Red}
+.shippingAddress .header, .billingAddress .header {margin-bottom:5px;}
+.shippingAddress .header span, .billingAddress .header span {padding-left:40px;}
+.billingAddress .header span {color:Black;}
+.billingAddress .header span input {vertical-align:middle}
+.shippingAddress td, .billingAddress td {text-align:left; padding-left:11px; padding-bottom:10px;}
+.shippingAddress td input, .shippingAddress td select, .billingAddress td input,
+.billingAddress td select {width:186px; border:1px solid #A5ACB2}
+.checkout .button {margin-left:5px;}
+
+.checkout .stepContainer {margin-top:15px; border-top:1px solid #DCDCDC; }
+.checkout .stepContainerSuc {margin-top:7px; border-top:1px solid #DCDCDC; }
+.checkout .stepBar {margin-top:1px; background:#FA9D1A; height:25px; line-height:25px; color:#fff; font-weight:bold; clear:both; padding-left:30px;}
+.checkout .stepBarHeader {margin-top:1px; background:#FA9D1A; height:25px; font-weight:bold; color:#fff; text-align:center;padding-top:1px;}
+.checkout .stepBar div.left{float:left; width:405px;}
+.checkout .stepBar div.right{float:left; width:265px;}
+.checkout .step3_buttonrow {margin-top:10px}
+.checkout .step3_buttonrow .left {float:left;}
+.checkout .step3_buttonrow .right {float:right; margin-right:5px;}
+.checkout .step3_Content {padding-bottom:5px;}
+.checkout .step3_Content span.editAddress {font-size:14px; line-height:14px; margin-top:15px;}
+.checkout .step3_Content span.editAddress a{color:#E4A732; font-weight:bold;}
+
+.checkout .step2_content {margin-top:15px; clear:both; padding-left:30px;}
+.checkout .step2_content div {white-space:normal; word-break:break-all; word-wrap:break-word;}
+.checkout .step2_content div.left {width:270px; float:left;}
+.checkout .step2_content div.middle {width:135px; float:left; background:url(../../images/checkout/nav.gif) 50% 50% no-repeat; height:165px;}
+.checkout .step2_content div.right {width:270px; float:left;}
+.checkout .step2_content div.editAddress {font-size:14px; line-height:14px; margin-top:15px;}
+.checkout .step2_content div.editAddress a{color:#E4A732; font-weight:bold;}
+.checkout .verifyCode{clear:both; text-align:center; padding-top:25px; color:Red;}
+.checkout .verifyCode span {padding-right:25px; font-weight:bold; color:#000;}
+.checkout .verifyCode span input {border:1px solid #DCDCDC}
+.checkout .verifyCode a{color:#E4A732;}
+.checkout .verifyCode div {margin-top:30px;}
+.checkout .verifyCode div span {padding:0px; font-weight:normal;}
+.checkout .indent30 {margin:0px 30px;}
+.checkout .indent30 .stepBar{margin-top:0px; font-size:16px; height:27px; line-height:27px;}
+.checkout .ordertable {border-left:solid 1px #cfcfcf;border-right:solid 1px #cfcfcf;border-bottom:solid 1px #cfcfcf;}

@@ -1,0 +1,138 @@
+﻿.emailHeading {
+font-size:14px;
+font-family:verdana, helvetica, arial, sans-serif;
+letter-spacing:-1px;
+color:#0a3b5f;
+font-weight:400;
+text-transform:uppercase;
+margin:0;
+padding:8px 0 8px 15px;
+}
+
+.emaildownMenu {
+
+}
+
+.emailmenudropped {
+display:none;
+text-align:left;
+position:absolute;
+background:#7bcffe;
+font-size:12px;
+width:300px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+border:1px solid #fff;
+box-shadow:0 0 8px white;
+-moz-box-shadow:0 0 8px white;
+-webkit-box-shadow:0 0 8px white;
+
+margin:10px 0 0 20px;
+padding:10px 20px 10px;
+left:0px;
+z-index:550;
+}
+
+.emailmenudropped div.textleft {
+float:left;
+font-size:12px;
+width:200px;
+margin:10px 0 0;
+padding:0 20px 10px 10px;
+}
+
+.emailmenudropped ul.left {
+text-align:left;
+float:left;
+
+font-size:12px;
+width:180px;
+margin:0;
+padding:0;
+}
+
+.emailmenudropped ul.middle {
+text-align:left;
+float:left;
+border-left:1px solid #fff;
+
+font-size:12px;
+width:180px;
+margin:0;
+padding:0;
+}
+
+.emailmenudropped ul.right {
+text-align:left;
+float:left;
+font-size:12px;
+width:178px;
+margin:0;
+padding:0;
+}
+
+.emailmenudropped ul.left li, .emailmenudropped ul.middle li
+{
+	float:none;
+}
+
+.emailmenudropped ul.right li a,.emailmenudropped ul.middle li a ,.emailmenudropped ul.left li a {
+list-style-type:none;
+display:block;
+font-family:Verdana;
+color:#ffffff;
+font-size:14px;
+font-weight:bold;
+margin:0;
+text-decoration:none;
+padding:5px 0 5px 20px;
+}
+
+.emailmenudropped ul.right li a:hover,.emailmenudropped ul.middle li a:hover,.emailmenudropped ul.left li a:hover {
+list-style-type:none;
+font-family:Verdana;
+color:#fca308;
+display:block;
+font-size:14px;
+font-weight:bold;
+margin:0;
+padding:5px 0 5px 21px;
+text-decoration:none;
+}
+
+.EmailInput 
+{
+display:block;
+-moz-border-radius:4px;
+-webkit-border-radius:4px;
+width:280px;
+background: none repeat scroll 0 0 #ceedff;
+border: 1px solid #ffffff;
+/*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset, 0 1px 0 rgba(255, 255, 255, 0.2);*/
+color: #41a4e5;
+/*text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);*/
+}
+.EmailInput:hover{
+border:0.2px solid #ffffff;
+outline: medium none;
+box-shadow:0 0 8px #C8C8C8;
+-moz-box-shadow:0 0 8px #C8C8C8;
+-webkit-box-shadow:0 0 8px #C8C8C8;}
+.EmailInput:focus{
+border: 1px solid rgba(255, 255, 255, 0.5);
+outline: medium none;
+box-shadow:0 0 10px White;
+-moz-box-shadow:0 0 10px White;
+-webkit-box-shadow:0 0 10px White;
+
+}
+
+.EmailInputError{
+border:1px solid Red;
+outline: medium none;
+box-shadow:0 0 10px Red;
+-moz-box-shadow:0 0 10px Red;
+-webkit-box-shadow:0 0 10px Red;
+
+}
+

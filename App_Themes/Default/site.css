@@ -1,0 +1,66 @@
+/*-------------------------------------------------------------------------------------------------------------------- Basic Style -------------------*/
+body {margin:0px;padding:0px;color:#000000;font:0.7em/140% Verdana, Arial, Helvetica, sans-serif;background-color:#228CA6;}
+p,ul, ol {margin: 0px;padding: 0px;}
+a img {border: none;}
+p{}
+p.clear{clear:both;}
+p.middle{text-align:center;}
+br.clear{clear:both;}
+h2{background:url(/clientdata/image/pages/section_arrow.gif) no-repeat 1px 10%;font-size:1.5em;color:#628AAA;padding-left:20px;}
+
+/*---------------------------------------------------------------------------------------------------------- Logo & Banner Zone -------------------*/
+#logoBannerZone{clear:both;width:100%;background:url(/clientdata/image/templates/logo_banner_wrapper_bg.jpg) repeat-x left top;}
+#logoWrapper{width:946px;height:71px;margin-right:auto;margin-left:auto;background:url(/clientdata/image/templates/logo.jpg) no-repeat left center;}
+#logo{height:67px;width:323px;float:left;}
+#logoRight{height:67px;margin-right:5px;padding-top:40px;text-align:right;font-size:1.2em;color:#FDFEFF;padding-left:10px;}
+#banner{clear:both;width:946px;height:252px;margin-right:auto;margin-left:auto;}
+
+/*---------------------------------------------------------------------------------------------------------- Main Zone -------------------*/
+#mainZone{width:946px;margin-right:auto;margin-left:auto;background:#ffffff url(/clientdata/image/templates/main_bg.gif) repeat-y right top;}
+#main{padding-left:10px;padding-right:10px;}
+#sideBarFullColumnBG{background:url(/clientdata/image/templates/side_bar_bg.gif) repeat-y left top;}
+#main{float:right;width:670px;color:#000000;}
+#sideBar{color:#000000;width:242px;}
+#sideBarHeader{padding:6px;background:url(/clientdata/image/templates/side_bar_header.gif) no-repeat left top;color:#FEFEFC;font-size:1.1em;font-weight:bold;}
+#videoWrapper{width:220px;height:174px;text-align:center;margin:10px 0px 0px 6px;border:2px solid #BECCCF;padding:2px;}
+#contentWrapper{padding:15px;text-align:left;}
+#breakLine{background:url(/clientdata/image/pages/sep_line.gif) no-repeat left center;margin-top:10px;}
+a.moreInfo{padding: 12px 5px 10px 0px;background:url(/clientdata/image/pages/more_info_bg.gif) no-repeat right center;color:#3A9DB8;text-decoration: none;font-weight:bold;display:block;width:236px;text-align:center;}
+a.moreInfoSmall{padding: 10px 0px 0px 10px;background:url(/clientdata/image/pages/more_info_small.gif) no-repeat left center;width:183px;height:28px;display:block;color:#3A9DB8;text-decoration: none;font-weight:bold;}
+#webHostingL{float:left;width:50%;}
+#webHostingL li{list-style-type:none; background:url(/clientdata/image/pages/arrow_dot.gif) no-repeat left 20%;padding-left:20px;}
+#webHostingR{}
+#webHostingR li{list-style-type:none; background:url(/clientdata/image/pages/arrow_dot.gif) no-repeat 315px 20%;padding-left:0px;}
+
+/*---------------------------------------------------------------------------------------------------------- Footer Zone -------------------*/
+#footerZone{clear:both;width:100%;margin-top:0px;height:37px;background:url(/clientdata/image/templates/footer_bg.jpg) repeat-x left top;}
+#footer{width:964px;height:37px;margin-right:auto;margin-left:auto;text-align:center;padding-top:10px;}
+
+
+
+
+
+ 
+
+/*-------------------------------------------------------------------------------------------------------------------- Default Style -------------------*/
+#loadingBox{position: absolute;top: 40%;left: 40%;background-color: #ffffff;height: 50px;width: 250px;text-align: center;padding-top: 20px;border-right: dodgerblue 3px solid;border-top: dodgerblue 3px solid;font-weight: bold;font-size: 16px;border-left: dodgerblue 3px solid;border-bottom: dodgerblue 3px solid;color:Black;}
+#clear{clear:both;}
+#clearLeft{clear:left;}
+#clearRight{clear:right}
+
+
+
+.loginsubmitbutton
+{
+    background: url(../images/btnsubmit.jpg) no-repeat left top;
+	width: 50px;
+	height: 20px;
+	text-align:center;
+	font-weight:bold;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	
+	
+    
+}

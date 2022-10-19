@@ -1,0 +1,384 @@
+/*
+.TopMenu
+{
+	background-color: #616975;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(244, 244, 244)),to(rgb(236, 236, 236)));
+	background-image: -webkit-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: -moz-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: -o-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: -ms-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f4f4f4', EndColorStr='#ececec');
+	border-bottom: 1px solid #065fa1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #878e98;
+	-moz-box-shadow: inset 0px 1px 0px 0px #878e98;
+	box-shadow: inset 0px 1px 0px 0px #878e98;
+	text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff; 
+    font:14px/normal Helvetica; 
+    color: #333; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    width: 100%;
+	height: 2.75em;
+	line-height: 2.75em;
+	text-indent: 5px;
+	display: block;
+	position: relative;
+}
+
+*/
+.TopMenu
+{
+	background-color: #616975;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(244, 244, 244)),to(rgb(236, 236, 236)));
+	background-image: -webkit-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: -moz-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: -o-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: -ms-linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	background-image: linear-gradient(top, rgb(244, 244, 244), rgb(236, 236, 236));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#F4F4F4', EndColorStr='#ECECEC');
+	border-bottom: 1px solid #065fa1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #878e98;
+	-moz-box-shadow: inset 0px 1px 0px 0px #878e98;
+	box-shadow: inset 0px 1px 0px 0px #878e98;
+	text-decoration: none; 
+    text-shadow: 1px 1px 0 #fff; 
+    font:14px/normal Helvetica; 
+    color: #333; 
+    white-space: nowrap; 
+    cursor: pointer; 
+    width: 100%;
+	height: 2.75em;
+	line-height: 2.75em;
+	text-indent: 5px;
+	display: block;
+	position: relative;
+	z-index:8000;
+}
+.TopMenu:hover, .TopMenu.active {
+	background-color: #3072b3;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(89, 155, 220)),to(rgb(48, 114, 179)));
+	background-image: -webkit-linear-gradient(top, rgb(89, 155, 220), rgb(48, 114, 179));
+	background-image: -moz-linear-gradient(top, rgb(89, 155, 220), rgb(48, 114, 179));
+	background-image: -o-linear-gradient(top, rgb(89, 155, 220), rgb(48, 114, 179));
+	background-image: -ms-linear-gradient(top, rgb(89, 155, 220), rgb(48, 114, 179));
+	background-image: linear-gradient(top, rgb(89, 155, 220), rgb(48, 114, 179));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#599bdc', EndColorStr='#3072b3');
+	border-bottom: 1px solid #103c56;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #6ad2ef;
+	-moz-box-shadow: inset 0px 1px 0px 0px #6ad2ef;
+	box-shadow: inset 0px 1px 0px 0px #6ad2ef;
+	
+	
+	border-color: #3072b3;
+    border-bottom-color: #2a65a0;
+    text-decoration: none; 
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+    color: #fff;
+}
+.TopMenu.icon:before {
+    content: "";
+    position: relative; 
+    top: 1px; 
+    float:left;
+    width: 30px; 
+    height: 30px; 
+    background: url(../Images/TopMenuStrip.png) 0 99px no-repeat;
+}
+
+.TopMenu.MyTastyGo.icon:before { background-position: 4px 6px; }
+.TopMenu.MyTastyGo.icon:hover:before,
+.TopMenu.MyTastyGo.icon:focus:before,
+.TopMenu.MyTastyGo.icon:active:before { background-position: -26px 6px; }
+
+.TopMenu.MyGifts.icon:before { background-position: 4px -30px; }
+.TopMenu.MyGifts.icon:hover:before,
+.TopMenu.MyGifts.icon:focus:before,
+.TopMenu.MyGifts.icon:active:before { background-position: -26px -30px; }
+
+
+.TopMenu.MyAccount.icon:before { background-position: 4px -70px; }
+.TopMenu.MyAccount.icon:hover:before,
+.TopMenu.MyAccount.icon:focus:before,
+.TopMenu.MyAccount.icon:active:before { background-position: -26px -70px; }
+
+.TopMenu.MyPreference.icon:before { background-position: 4px -108px; }
+.TopMenu.MyPreference.icon:hover:before,
+.TopMenu.MyPreference.icon:focus:before,
+.TopMenu.MyPreference.icon:active:before { background-position: -26px -108px; }
+
+.TopMenu.MyBusiness.icon:before { background-position: 4px -217px; }
+.TopMenu.MyBusiness.icon:hover:before,
+.TopMenu.MyBusiness.icon:focus:before,
+.TopMenu.MyBusiness.icon:active:before { background-position: -26px -217px; }
+
+
+.TopMenu.MySubscriptions.icon:before { background-position: 4px -147px; }
+.TopMenu.MySubscriptions.icon:hover:before,
+.TopMenu.MySubscriptions.icon:focus:before,
+.TopMenu.MySubscriptions.icon:active:before { background-position: -26px -147px; }
+
+.TopMenu.Referral.icon:before { background-position: 4px -247px; }
+.TopMenu.Referral.icon:hover:before,
+.TopMenu.Referral.icon:focus:before,
+.TopMenu.Referral.icon:active:before { background-position: -26px -247px; }
+
+
+.TopMenu.Signout.icon:before { background-position: 4px -187px; }
+.TopMenu.Signout.icon:hover:before,
+.TopMenu.Signout.icon:focus:before,
+.TopMenu.Signout.icon:active:before { background-position: -26px -187px; }
+
+.FontStyle {
+font-family:Helvetica !important;
+}
+
+#TastyMenu
+{
+	z-index:8000;
+	
+	}
+#TastyMenu li {
+	float:right;
+	display:block;
+	text-align:center;
+	position:relative;
+	padding-bottom: 4px;
+    padding-left: 4px;
+    padding-top: 4px;
+	border:none;
+	
+	
+}
+
+#TastyMenu li:hover {
+	
+	
+	
+	padding-bottom: 4px;
+    padding-top: 4px;
+	
+	
+	/*
+	background-color: #3072b3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
+    
+    
+	 Background color and gradients */
+	
+	background: #065fa1;
+	/*
+	background: -moz-linear-gradient(top, #599bdc, #3072b3);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#599bdc), to(#3072b3));
+	
+	 Rounded corners 
+	*/
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#TastyMenu li a {
+	color: white;
+	text-decoration:none;
+	
+}
+
+#TastyMenu li:hover a {
+	color:White;
+}
+#TastyMenu li .drop {
+    background: url("../images/drop.png") no-repeat scroll right 8px transparent;
+    color: #FCA308;
+    font-family: Helvetica;
+    font-size: 15px;
+    padding-right: 21px;
+    text-decoration: none;
+}
+#TastyMenu li:hover .drop:hover {
+    background: url("../images/drop.png") no-repeat scroll right 7px transparent;
+}
+#TastyMenu li:active .drop:active {
+    background: url("../images/drop.png") no-repeat scroll right 7px transparent;
+}
+
+.dropdown_1column, 
+.dropdown_2columns, 
+.dropdown_3columns, 
+.dropdown_4columns,
+.dropdown_5columns 
+{
+	margin:4px auto;
+	float:left;
+	position:absolute;
+	left:-999em; /* Hides the drop down */
+	text-align:left;
+	padding:10px 5px 10px 5px;
+	border:1px solid #065fa1;
+	border-top:none;
+	
+	
+	
+	
+	
+	
+	
+	background-color: #065fa1;
+   /* background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
+    
+	 Gradient background 
+	background:#F4F4F4;
+	background: -moz-linear-gradient(top, #EEEEEE, #BBBBBB);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EEEEEE), to(#BBBBBB));
+*/
+	/* Rounded Corners */
+	-moz-border-radius: 0px 5px 5px 5px;
+	-webkit-border-radius: 0px 5px 5px 5px;
+	border-radius: 0px 5px 5px 5px;
+}
+
+.dropdown_1column {width: 180px;}
+.dropdown_2columns {width: 280px;}
+.dropdown_3columns {width: 420px;}
+.dropdown_4columns {width: 560px;}
+.dropdown_5columns {width: 700px;}
+
+#TastyMenu li:hover .dropdown_1column, 
+#TastyMenu li:hover .dropdown_2columns, 
+#TastyMenu li:hover .dropdown_3columns,
+#TastyMenu li:hover .dropdown_4columns,
+#TastyMenu li:hover .dropdown_5columns {
+	left:-1px;
+	top:auto;
+}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5 {
+	display:inline;
+	float: left;
+	position: relative;
+	
+	/*
+	margin-left: 5px;
+	margin-right: 5px;
+	*/
+}
+.col_1 {width:130px;}
+.col_2 {width:270px;}
+.col_3 {width:410px;}
+.col_4 {width:550px;}
+.col_5 {width:690px;}
+
+#TastyMenu .menu_right {
+	margin-top:-4px;
+}
+#TastyMenu li .align_right {
+	/* Rounded Corners */
+	-moz-border-radius: 5px 0px 5px 5px;
+    -webkit-border-radius: 5px 0px 5px 5px;
+    border-radius: 5px 0px 5px 5px;
+    z-index:500;
+}
+
+#TastyMenu li:hover .align_right {
+	left:auto;
+	right:0px;
+	top:auto;
+}
+
+#TastyMenu p, #TastyMenu h2, #TastyMenu h3, #TastyMenu ul li {
+	font-family:Helvetica !important;
+	line-height:21px;
+	font-size:12px;
+	text-align:left;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+#TastyMenu h2 {
+	font-size:21px;
+	font-weight:400;
+	letter-spacing:-1px;
+	margin:7px 0 14px 0;
+	padding-bottom:14px;
+	border-bottom:1px solid #666666;
+	
+}
+#TastyMenu h3 
+{
+	width:163px;
+	font-size:14px;
+	margin:7px 0 14px 0;
+	padding-bottom:7px;
+	border-bottom:1px solid #065fa1;
+}
+#TastyMenu p {
+	line-height:18px;
+	margin:0 0 10px 0;
+}
+
+#TastyMenu li:hover div a {
+	font-size:14px;
+	color:#015b86;
+}
+#TastyMenu li:hover div a:hover {
+	color:white;
+}
+
+
+.strong {
+	font-weight:bold;
+}
+.italic {
+	font-style:italic;
+}
+
+#TastyMenu li ul {
+	list-style:none;
+	padding:0;
+	margin:-5px 0 -5px 0;
+}
+#TastyMenu li ul li {
+	font-size:12px;
+	line-height:24px;
+	position:relative;
+	text-shadow: 1px 1px 1px #ffffff;
+	padding:0;
+	margin:0;
+	float:none;
+	text-align:left;
+	width:180px;
+}
+#TastyMenu li ul li:hover {
+	background:none;
+	border:none;
+	padding:0;
+	margin:0;
+}
+
+
+.UserName
+{
+	color: #ffffff;	
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;	
+	text-align:right;	
+}
+
+.UserName:hover
+{
+	color: #ffffff;	
+	font-size: 14px;
+	font-style: normal;
+	text-decoration: none;	
+	text-align:right;	
+}

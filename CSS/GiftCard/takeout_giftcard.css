@@ -1,0 +1,38 @@
+.giftcardcontainer {text-align:center; }
+.giftcardcontainer .tochange { margin-top:10px; clear:both; }
+.giftcardcontainer .tochange a {background:url(../../images/nav2.gif) no-repeat; padding-left:20px;}
+.giftcardcontainer .giftcard_style1 {background:url(../../images/giftcard/template/style1.jpg); width:414px; height:259px; 
+	margin:0 auto; color:#FF892F; font-family:Plantagenet Cherokee}
+.giftcardcontainer .giftcard_style1 .amount {padding-left:20px; padding-top:25px; text-align:left; font-size:30px; font-weight:bold; line-height:30px;}
+.giftcardcontainer .giftcard_style1 .amount .money {margin-right:10px;}
+.giftcardcontainer .giftcard_style1 .expdate {padding-left:20px; text-align:left; font-weight:bold; font-size:14px; line-height:14px}
+.giftcardcontainer .giftcard_style1 .cardcode  {padding-left:20px; padding-top:2px; text-align:left; font-weight:bold; font-size:14px; line-height:14px; color:#DA951C}
+.giftcardcontainer .giftcard_style1 .giftforyou {padding-left:20px; padding-top:8px; text-align:left; font-weight:bold; font-size:26px; line-height:26px;}
+.giftcardcontainer .giftcard_style1 .cardcomments {padding-left:20px; float:left; text-align:left; font-weight:bold;font-size:11px; line-height:11px; 
+	width:270px; white-space:normal; word-break:break-all; word-wrap:break-word;}
+	
+.giftcardcontainer .giftcard_style2 {background:url(../../images/giftcard/template/style8.jpg); width:414px; height:259px; 
+	margin:0 auto; color:#fff; font-family:Plantagenet Cherokee}
+.giftcardcontainer .giftcard_style2 .amount {padding-left:20px; padding-top:28px; text-align:left; font-size:30px; font-weight:bold; line-height:30px;}
+.giftcardcontainer .giftcard_style2 .amount .money {margin-right:10px;}
+.giftcardcontainer .giftcard_style2 .expdate {padding-left:20px; text-align:left; font-weight:bold; font-size:14px; line-height:14px;}
+.giftcardcontainer .giftcard_style2 .cardcode  {padding-left:20px; text-align:left; padding-top:4px; font-weight:bold; font-size:14px; line-height:14px; color:#E6A200;}
+.giftcardcontainer .giftcard_style2 .giftforyou {padding-left:20px; text-align:left; padding-top:4px; font-weight:bold; font-size:26px; line-height:26px;}
+.giftcardcontainer .giftcard_style2 .cardcomments {padding-left:20px; float:left; text-align:left; font-weight:bold;font-size:11px; line-height:11px; 
+	width:270px; white-space:normal; word-break:break-all; word-wrap:break-word;}
+
+.giftcardcontainer .giftcard_style3 {background:url(../../images/giftcard/template/style3.jpg); width:414px; height:259px; 
+	margin:0 auto; color:#B8753D; font-family:Plantagenet Cherokee}
+.giftcardcontainer .giftcard_style3 .amount {padding-right:38px; text-align:right; padding-top:80px; font-size:30px; font-weight:bold; line-height:30px;}
+.giftcardcontainer .giftcard_style3 .amount .money {margin-right:10px;}
+.giftcardcontainer .giftcard_style3 .expdate {padding-right:38px; text-align:right; font-weight:bold; font-size:14px; line-height:14px;}
+.giftcardcontainer .giftcard_style3 .cardcode  {padding-right:38px; text-align:right; padding-top:4px; font-weight:bold; font-size:14px; line-height:14px;color:#DBC3AF;}
+.giftcardcontainer .giftcard_style3 .giftforyou {padding-right:38px; text-align:right; padding-top:3px; font-weight:bold;
+	 font-size:26px; line-height:26px;}
+.giftcardcontainer .giftcard_style3 .cardcomments {float:right; text-align:right; padding-right:38px; font-weight:bold;
+	 font-size:11px; line-height:11px; width:270px; white-space:normal; word-break:break-all; word-wrap:break-word;}
+	 
+.actionoption {font-size:14px; margin-top:30px; margin-bottom:20px;}
+.actionoption .email {background:url(../../images/email.gif) 0 center no-repeat; padding:10px 60px 10px 50px; }
+.actionoption .print {background:url(../../images/print.gif) 0 center no-repeat; padding:10px 60px 10px 50px; cursor:pointer;}
+.actionoption .print:hover {text-decoration:underline;}

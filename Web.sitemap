@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/admin/controlpanel.aspx" title="Control Panel"  description="">
+    <siteMapNode url="~/admin/Cuisine.aspx" title="Cuisine"  description="">
+      <siteMapNode url="~/admin/adddealtems.aspx" title="Deal Management"  description=""/>
+      <siteMapNode url="~/admin/addmenuitems.aspx" title="Menu Management"  description=""/>
+    </siteMapNode>
+    <siteMapNode url="~/admin/userManagement.aspx" title="User Management"  description=""/>
+    <siteMapNode url="~/admin/dealOrderInfo.aspx" title="Deal Order Management"  description=""/>
+    <siteMapNode url="~/admin/giftcard.aspx" title="Gift Card"  description=""/>
+    <siteMapNode url="~/admin/provincesTaxRates.aspx" title="Province Tax Rates"  description=""/>
+    <siteMapNode url="~/admin/referralbanner.aspx" title="Referral Banner"  description=""/>
+    <siteMapNode url="~/admin/withdrawRequests.aspx" title="Withdraw Requests"  description=""/>
+    <siteMapNode url="~/admin/restaurantManagement.aspx" title="Business Management"  description=""/>
+    <siteMapNode url="~/admin/dealManagement.aspx" title="Deal Management"  description=""/>
+    <siteMapNode url="~/admin/newsLetterMgmt.aspx" title="Newsletter Management"  description=""/>
+    <siteMapNode url="~/admin/sendNewsletter.aspx" title="Send Newsletter"  description=""/>
+    <siteMapNode url="~/admin/newsletterSubsMgmt.aspx" title="Manage Newsletter Subscribers"  description=""/>
+    <siteMapNode url="~/admin/giftcardManagment.aspx" title="Giftcard Managment"  description=""/>
+    <siteMapNode url="~/admin/dealOrdersMgmtByUsers.aspx" title="Deal Ordered History"  description="">
+      <siteMapNode url="~/admin/dealOrdersDetailsByUsers.aspx" title="Deal Order Details"  description=""/>
+    </siteMapNode>
+    <siteMapNode url="~/admin/affiliatePartners.aspx" title="Affiliate Partner"  description=""/>
+  </siteMapNode>
+</siteMap>

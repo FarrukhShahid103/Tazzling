@@ -1,0 +1,3 @@
+div.ratepost{padding:0; margin:0; width:80px; height:16px; background: url(../../images/rate/star_rating.png) repeat-x 0 0;}
+div.ratepost div.current_rating{padding:0;margin:0; background: url(../../images/rate/star_rating.png) 0 15px; height: 16px;}
+div.rateRight {float:right}

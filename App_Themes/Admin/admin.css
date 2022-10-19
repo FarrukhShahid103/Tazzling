@@ -1,0 +1,56 @@
+﻿/* ============= Start Standard Style =======================*/
+html { margin: 0px; padding: 0px; } 
+body { 	margin: 0px; padding: 0px; color: #000000; background: #fff; font: 11px/140% Verdana, Arial, Helvetica, sans-serif;} 
+a.underline:visited,a.underline:active,a.underline:hover{color: #0000cc;text-decoration: underline;} 
+a:link {color: #0000cc; text-decoration:none} 
+a:visited {color: #0000cc;  text-decoration:none} 
+a:active, a:hover {color: #000099;  text-decoration:none} 
+h1 {color: #5b626c;font-size: 1.7em;font-weight:bold;margin-bottom:10px;margin-top:3px;} 
+h2 {color: #5b626c;font-size: 1.6em;font-weight:bold;margin-bottom:10px;margin-top:3px;} 
+h3 {color: #5b626c;font-size: 1.5em;font-weight:bold;margin-bottom:10px;margin-top:3px;} 
+h4 {color: #5b626c;font-size: 1.3em;font-weight:bold;margin-bottom:5px;margin-top:3px;} 
+h5 {color: #000;font-size: 1.1em;font-weight:bold;margin-bottom:5px;margin-top:3px;} 
+h6 {color: #000;font-size: 1.0em;font-weight:bold;margin-bottom:5px;margin-top:3px;} 
+img { border: 0px; } 
+div {line-height:15px;}
+hr{color: #e6e6fa;} 
+table { font-size: 100%; } 
+form { margin: 0px; padding: 0px; } 
+input, textarea, select { font: 100% Verdana, Arial, Helvetica, sans-serif;} 
+/* ============= End Standard Style =======================*/
+
+/* ============= Start Zone Layout ======================== */
+#IHeader{height:39px;color:#ffffff;background-image: url('/app_themes/admin/images/system/header_bg.gif');background-position: 0% 0%;background-repeat: repeat;}
+#ILogo{float:left;height:39px;width:176px;background:#fff url(/App_Themes/Admin/images/system/inchollogo.gif) no-repeat left 50%;}
+#IMainMenu{float:right;}
+#IAdminTitle{font-size:1.7em;padding-top:14px;}
+#IMain{clear:both;border:solid 0px #dbdce3;padding-top:38px;padding-right:5px;padding-left:5px;min-height:400px;}
+#Page{color: #000000;background-color: #ffffff;}
+#Menu{height:20px;background-color: #ccccff;padding-left: 5px;padding-right: 5px;text-align:center;}
+#Body{min-height: 500px;padding-left: 5px;padding-right: 5px;padding-top: 5px;}
+#IAction{height:39px;line-height:39px;font-size:16px;float:right;margin-right:10px;} 
+#IAction a{color:White; text-decoration:none;}
+#CopyRight{float:right;height:18px;padding-top:8px;}
+ #PageTemplateWizard{font-weight:bold; font-size:14px; text-align:center;}
+.tabZone{padding: 3px;font: 11px/140% Verdana, Arial, Helvetica, sans-serif;white-space:normal;}
+#PageTemplateWizard{font-weight:bold; font-size:14px; text-align:center;}
+.tabZone{padding: 3px;font: 11px/140% Verdana, Arial, Helvetica, sans-serif;white-space:normal;}
+/* -------------- End Zone Layout ------------------------ */
+
+/* --------------- Menu -------------------------*/
+#IMainMenu ul{margin-top:0; margin-bottom:0; list-style-type:disc; list-style-position:outside;}
+#IMainMenu li{display:inline;list-style:none;float:left;margin-right:5px;margin-top:11px;background:#FFF url(/app_themes/admin/images/system/menu_item_right.png) no-repeat right top;}
+#IMainMenu a {display: block;padding: 6px 10px 5px 10px;background-image: url(/app_themes/admin/images/system/menu_item_left.png);background-repeat: no-repeat;background-position:left top;text-align: center;text-decoration: none;color: #000;font-size: 1.1em;text-transform:inherit;}
+#IMainMenu a:hover{color:#F90;}
+#ISubMenu{height: 29px;width:100%;color:#ffffff;background-image: url('/app_themes/admin/images/system/menu_bg.jpg');margin-bottom: 0px;position: absolute;top: 39px;left: 0px;}
+#ISubMenu li a{font-weight:bold;color:#086CAF;text-decoration:none;}
+ul#SubNav{margin:0;padding-top:2px;list-style:none;float:left;}
+#SubNav li{float: left;padding-left:10px;}
+#SubNav a {text-decoration:underline;color: #000000;font-size: 1.0em;text-transform: inherit;border-left: none;display: block;padding: 5px;}
+.MessageBox{border:solid 1px gray;padding:10px;}
+.CpIndexMapAdmin{background-image:url('/App_Themes/Admin/images/directory_admin.gif'); width:994px;height:639px; background-repeat: no-repeat;}
+.CpIndexMapSubsite{background-image:url('/App_Themes/Admin/images/directory.gif'); width:994px;height:639px; background-repeat: no-repeat;}
+.StatisticsList{background:url('/App_Themes/Admin/images/ArrowRight.gif') no-repeat 0 50%;padding-left:10px;line-height:20px;} 
+.clear {clear:both;}
+.clearLeft{clear:left;}
+.clearRight{clear:right;}

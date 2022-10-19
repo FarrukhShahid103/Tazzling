@@ -1,0 +1,174 @@
+﻿
+    #menuh-container
+	{
+	position: absolute;		
+	top: 1em;
+	left: 1em;
+	}
+
+#menuh
+	{
+	font-size: small;
+	font-family: arial, helvetica, sans-serif;
+	font-size:12px;
+	float:left;
+	text-align:left;
+	}
+		
+#menuh a
+	{
+	text-align: center;
+	display:block;
+	white-space:nowrap;
+	margin:0;
+	padding: 0.3em;
+	}
+	
+#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
+	{
+	color: White;
+	font-weight:bold;
+	font-size:16px;
+	font-family: Arial,Helvetica,sans-serif;
+	text-decoration:none;
+	}
+	
+  /*#menuh a:hover			
+    {
+    color: White;
+    font-weight:bold;
+    font-size:16px;
+    font-family: Arial,Helvetica,sans-serif;
+    background-image: url(../Images/menuHover.jpg);
+	background-repeat:repeat-x;
+    text-decoration:none;
+    }	
+	
+#menuh a.top_parent:hover  
+	{	
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	height:30px;
+	margin-bottom:6px;
+	font-size:16px;
+	}
+
+#menuh a.top_parent  
+	{	
+	background-position: center bottom;
+	margin-bottom:6px;
+	background-repeat: no-repeat;
+	height:30px;
+	font-size:16px;
+	}
+	
+#menuh a.top_NotParent:hover  
+	{
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-image: url(../Images/menuHover.jpeg);
+	height:37px;
+	font-size:16px;
+	}*/
+
+#menuh a.top_NotParent  /* attaches down-arrow to all top-parents */
+	{
+	background-position: right center;
+	background-repeat: no-repeat;
+	height:37px;
+	font-size:16px;
+	}
+	
+	
+	
+		
+	
+	
+	
+	
+/* End CSS Drop Down Menu */
+
+.menu_s {padding:0px; background:url(../Images/menu_s.gif) no-repeat; width:6px; height:45px;}
+.menu_s_width{width:6px;}
+.meun_Pad{padding-top:6px;padding-left:20px;padding-right:19px;}
+
+
+.sddm
+{
+    margin-top: 0;
+    padding: 0;
+    z-index: 1009;    
+    color: #d88e14;
+    text-align:left;
+    }
+        
+
+.sddm li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    font: bold 11px arial;
+    z-index:2009;
+    color: #d88e14;
+}
+
+.sddm li a
+{
+    display: block;
+    margin: 0 1px 0 0;
+    padding: 4px 10px;
+    width: 120px;
+    background: #000000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sddm li a:hover
+{
+    background: #e8e8e8;
+    color: #d88e14;
+}
+
+.sddm div
+{
+	position:absolute;
+    visibility: hidden;
+    margin: 0;
+    padding: 10;
+    z-index:8000;
+    /*filter:alpha(opacity=90);
+	-moz-opacity: .90;
+	opacity: .90;*/
+    
+}
+
+.sddm div a
+{
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 200px;
+    white-space: nowrap;
+    text-align: left;
+    text-decoration: none;
+    background: #c96201;
+    color:White;
+   /*filter:alpha(opacity=90);
+	-moz-opacity: .90;
+	opacity: .90;*/
+}
+.sddm div a:hover
+{
+   position: relative;
+    display: block;
+    margin: 0;
+    width: 200px;   
+    white-space: nowrap;
+    text-align: left;
+    text-decoration: none;    
+    color:White;   
+	background-image: url(../Images/menuSubMenu.jpg);
+	background-repeat:repeat-x;	
+}

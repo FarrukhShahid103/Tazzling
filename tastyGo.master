@@ -1,0 +1,781 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="tastyGo.master.cs" Inherits="Takeout_tastyGo" %>
+
+<%@ Register TagName="FooterZone" TagPrefix="usrCtrl" Src="UserControls/Templates/FooterZone.ascx" %>
+<%@ Register TagName="TopView" TagPrefix="usrCtrl" Src="UserControls/Templates/TopView.ascx" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns:wb="http://open.weibo.com/wb">
+<head id="myHead" runat="server">
+    <asp:Literal ID="linkID" runat="server"></asp:Literal>
+    <asp:Literal ID="Meta1" runat="server"></asp:Literal>
+    <meta http-equiv="refresh" content="2000" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="http://www.tazzling.com/favicon.ico" />
+    <meta name="Keywords" content="daily deal, vancouver daily deals, vancouver daily deal, vancouver, coupons, daily deal vancouver" />
+    <script type="text/javascript" src="JS/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
+    <script src="JS/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/tastygo.css" />
+    <script src="JS/tipsy.js"></script>
+    <link href="CSS/tipsy.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="CSS/gh-buttons.css">
+    <link href="CSS/jquery-ui-1.8.18.custom.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="JS/jquery.hoverwords.js"></script>
+    <script type="text/javascript" src="JS/jquery.lettering.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/jquery.jscrollpane.css" media="all" />
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#messages").click(function () {
+                $("#messages").slideUp('slow');
+            });
+            $('.Tipsy').tipsy({ gravity: 's' });
+        });
+        function MessegeArea(msg, msgtype) {
+            // $("#messages").slideUp('slow').parent().removeClass("ErrorBorder SuccessBorder");
+            $("#messages").slideUp('slow', function () {
+                // Animation complete.
+            });
+
+            if (msgtype == "success") {
+                $("#messages").removeClass("errorMessage").addClass("successMessage").html(msg).slideDown("slow").parent().removeClass("ErrorBorder").addClass("SuccessBorder");
+            }
+            else {
+                $("#messages").removeClass("successMessage").addClass("errorMessage").html(msg).slideDown("slow").parent().removeClass("SuccessBorder").addClass("ErrorBorder");
+            }
+
+            setTimeout(function () {
+                $("#messages").slideUp('slow', function () {
+                    $("#messages").parent().removeClass("ErrorBorder SuccessBorder");
+                });
+            }, 60000);
+
+        };
+
+
+
+        //        $(window).load(function () {
+
+        //            $('#Itemtab3').click(function () {
+        //                $("#messages").slideUp("slow");
+        //            });
+
+        //            $('#Itemtab2').click(function () {
+        //                $("#messages").slideUp("slow");
+        //            });
+
+        //            $('#Itemtab1').click(function () {
+        //                $("#messages").slideUp("slow");
+        //            });
+
+        //            $('#Itemtab4').click(function () {
+        //                $("#messages").slideUp("slow");
+        //            });
+
+        //            $('#Itemtab5').click(function () {
+        //                $("#messages").slideUp("slow");
+        //            });
+
+        //        });
+    </script>
+    <%--  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32317236-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+    </script>--%>
+    <style type="text/css">
+        .MenuItem
+        {
+            border-left: 1px solid #E7E7E8;
+            float: left;
+            height: 100%;
+            padding: 17px 17px 19px;
+            border-top: 3px solid white;
+            cursor: pointer;
+        }
+        
+        
+        .MenuIconFeeds
+        {
+            background-image: url("images/Feeds.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        
+        .MenuIconFeeds_Hover
+        {
+            float: left;
+            background-image: url('images/Feeds_Hover.png');
+            background-repeat: no-repeat;
+            height: 21px;
+            width: 21px;
+            padding-right: 3px;
+        }
+        
+        .MenuIconCalander
+        {
+            background-image: url("images/Calander.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        
+        .MenuIconCalander_Hover
+        {
+            float: left;
+            background-image: url('images/Calander_Hover.png');
+            background-repeat: no-repeat;
+            height: 21px;
+            width: 21px;
+            padding-right: 3px;
+        }
+        
+        .MenuIconMobile
+        {
+            background-image: url("images/Mobile.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        
+        .MenuIconMobile_Hover
+        {
+            float: left;
+            background-image: url('images/Mobile_Hover.png');
+            background-repeat: no-repeat;
+            height: 21px;
+            width: 21px;
+            padding-right: 3px;
+        }
+        
+        
+        
+        .MenuIconInvite
+        {
+            background-image: url("images/Invite.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        
+        .MenuIconInvite_Hover
+        {
+            float: left;
+            background-image: url('images/Invite_Hover.png');
+            background-repeat: no-repeat;
+            height: 21px;
+            width: 21px;
+            padding-right: 3px;
+        }
+        
+        .MenuIconHowItWorks
+        {
+            background-image: url("images/HowItWorks.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        
+        
+        
+        .MenuIconHowItWorks_Hover
+        {
+            float: left;
+            background-image: url('images/HowItWorks_hover.png');
+            background-repeat: no-repeat;
+            height: 21px;
+            width: 21px;
+            padding-right: 3px;
+        }
+        .MenuIconShopingCart
+        {
+            background-image: url("images/Shoping_Cart.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 23px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        .MenuIconShopingCart_Hover
+        {
+            background-image: url("images/Shoping_Cart.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 23px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        
+        .MenuIconShopingCartEmpty
+        {
+            background-image: url("images/Shoping_CartEmpty.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        .MenuIconShopingCartEmpty_Hover
+        {
+            background-image: url("images/Shoping_CartEmpty.png");
+            background-repeat: no-repeat;
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+            width: 21px;
+        }
+        .MenuIconShopingSignup
+        {
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+        }
+        .MenuIconShopingSignup_Hover
+        {
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+        }
+        .MenuIconShopingLogin
+        {
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+        }
+        .MenuIconShopingLogin_Hover
+        {
+            float: left;
+            height: 21px;
+            padding-right: 3px;
+        }
+        .MenuText
+        {
+            float: left;
+            color: Black;
+            font-family: 'Times New Roman';
+            font-size: 16px;
+        }
+        .MenuText_Hover
+        {
+            float: left;
+            color: #dd0016;
+            font-family: 'Times New Roman';
+            font-size: 16px;
+        }
+        
+        .MenuText_Hover a:hover
+        {
+            color: #dd0016;
+            font-family: 'Times New Roman';
+            font-size: 16px;
+        }
+        
+        .ItemborderRight
+        {
+            border-left: 0 solid #FFFFFF;
+            border-right: 1px solid #E3E2E2;
+            padding-top: 24px;
+        }
+        
+        .ItemborderRightEmpty
+        {
+            border-left: 0 solid #FFFFFF;
+        }
+        .SearchBox
+        {
+            border: 1px solid #E3E2E2;
+            border-radius: 20px 20px 20px 20px;
+            height: 30px;
+            padding-left: 25px;
+            padding-right: 15px;
+            width: 115px;
+        }
+        .MenuItemSearch
+        {
+            border-right: 1px solid #E7E7E8;
+            border-top: 3px solid white;
+            float: left;
+            height: 100%;
+            padding: 8px 20px 20px;
+        }
+        .SearchIcon
+        {
+            
+        }
+        .SearchIcon a
+        {
+            margin-left: 7px;
+            margin-top: 9px;
+            position: absolute;
+            height: 18px;
+            width: 18px;
+            background-image: url('images/SearchMirror.png');
+            background-repeat: no-repeat;
+        }
+        .SearchIcon a:hover
+        {
+            background-image: url('images/SearchMirror_Hover.png');
+            background-repeat: no-repeat;
+        }
+        .CartItemContainer
+        {
+            /*
+            background-color: #DD0017;
+            border-radius: 10px 10px 10px 10px;
+            color: white;
+            float: left;
+            font-weight: bold;
+            min-height: 10px;
+            min-width: 10px;
+            */
+            background-color: #DD0017;
+            border: 2px solid white;
+            border-radius: 50px 50px 50px 50px;
+            box-shadow: 1px 1px 1px gray;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 1px 7px;
+            position: absolute;
+            right: -44px;
+            top: 2px;
+        }
+        
+        .UserNemu
+        {
+            background-color: #FAFAFD;
+            border-top:3px solid #fafafd;
+            cursor: pointer;
+            float: left;
+            height: 100%;
+            padding: 17px 19px 19px;
+            width: 107px;
+            color: #959790;
+            border-right:1px solid #E7E7E8;
+            border-left:1px solid #E7E7E8;
+        }
+        
+         .UserNemuActive
+        {
+        	border-top:3px solid #dd0016;
+        	border-right:1px solid #E7E7E8;
+            background-color: #313131;
+            color: White;
+            cursor: pointer;
+            float: left;
+            height: 100%;
+            padding: 17px 19px 19px;
+            width: 107px;
+        }
+        
+        .UserNemu span, .UserNemuActive span
+        {
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+           
+        }
+        .UserMenuArrow
+        {
+            background-image: url("images/UserMenu_DownArrow.png");
+            background-repeat: no-repeat;
+            float: right;
+            height: 6px;
+            margin-left: 15px;
+            margin-top: 5px;
+            width: 12px;
+        }
+        
+        .UserMenuArrowActive
+        {
+            background-image: url("images/UserMenu_DownArrow_Active.png");
+            background-repeat: no-repeat;
+            float: right;
+            height: 6px;
+            margin-left: 15px;
+            margin-top: 5px;
+            width: 12px;
+        }
+        .UserMenuDropDown
+        {
+                float: right;
+                height: auto;
+                position: absolute;
+                width: 125px;
+                z-index: 100;
+                display:none;
+                margin-left:-1px;
+        }
+        .UserMenuDropDown li
+        {
+              background-color: #FAFAFD;
+                border-bottom: 1px solid #E3E2E2;
+                border-left: 1px solid #E3E2E2;
+                border-right: 1px solid #E3E2E2;
+                color: #606061;
+                cursor: pointer;
+                font-family: arial;
+                font-size: 13px;
+                padding: 8px 10px;
+                width: 100%;
+        }
+        .UserMenuDropDown li:hover a:hover
+        {
+            background-color: #dd0016;
+            color: #ffffff;
+            
+        }
+
+        .UserMenuDropDown li a
+        {
+            color: #606061;
+        }
+        .UserMenuDropDown li:hover a
+        {
+            color: #ffffff;
+        }
+        
+        
+        .UserMenuDropDown li:hover
+        {
+            background-color: #dd0016;
+            color: #ffffff;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".MenuItem").mouseenter(function () {
+                $(this).animate({ borderTopColor: "#313131" }, 'fast');
+                var IconclassName = $(this).find("div").attr("class");
+                $(this).find("div").attr("class", IconclassName + "_Hover");
+
+                var IconTextClassname = $(this).find("span").attr("class");
+                $(this).find("span").attr("class", IconTextClassname + "_Hover");
+
+            }).mouseleave(function () {
+                $(this).animate({ borderTopColor: "#fff" }, 'fast');
+                var className = $(this).find("div").attr("class");
+                var spliter = new Array();
+                spliter = className.split('_');
+                $(this).find("div").attr("class", spliter[0]);
+
+                var IconTextClassname = $(this).find("span").attr("class");
+                var IconTextClassnameSpliter = new Array();
+                IconTextClassnameSpliter = IconTextClassname.split('_');
+                $(this).find("span").attr("class", IconTextClassnameSpliter[0]);
+
+            });
+            $(".MenuItemSearch").click(function () {
+
+                $(this).find("input[id=ctl00_txtSearch]").animate({ "width": "250px" }, 'fast');
+                $("#UserNemu").removeClass("UserNemuActive").addClass("UserNemu");
+                $("#UserNemu").find("div").removeClass("UserMenuArrowActive").addClass("UserMenuArrow");
+                $(".UserMenuDropDown").hide();
+
+            });
+
+            var IsSearchClicked = false;
+            $(document).click(function () {
+                var flag = $('.MenuItemSearch :focus').html();
+                if (typeof flag == "undefined") {
+                    $("#ctl00_txtSearch").animate({ "width": "115px" }, 'fast');
+                }
+
+            });
+            $("#CartFilled").mouseenter(function () {
+                $(".CartItemContainer").effect("bounce", { times: 3 }, 100);
+            });
+            $("#BtnSearch").mouseenter(function () {
+                // $(this).css("width", "250px");
+            });
+
+//            $(".UserMenuDropDown li").mouseenter(function () {
+//                $(this).animate({ "text-indent": "25px" }, "fast").css({ "border-left": "3px solid #313131", "font-weight": "bold" });
+//            }).mouseleave(function () {
+//                $(this).animate({ "text-indent": "5px" }, "fast").css({ "border-left": "1px solid #E7E7E8", "font-weight": "normal" });
+//            });
+           $("#UserNemu").click(function () {
+                $(this).toggleClass("UserNemuActive", "UserNemu");
+                var currentArrowClass = $(this).find("div").attr("class");
+                if (currentArrowClass == "UserMenuArrow") {
+                    $(this).find("div").removeClass(currentArrowClass).addClass("UserMenuArrowActive");
+                }
+                else {
+                    $(this).find("div").removeClass(currentArrowClass).addClass("UserMenuArrow");
+                }
+                $(".UserMenuDropDown").toggle();
+
+            });
+            function MouseOver(ID) {
+                if (ID == "MySubscriptions") {
+                    $("." + ID).animate({ "text-indent": "30px", "font-weight": "bold" }, "fast");
+                }
+                else {
+                    $("." + ID).animate({ "text-indent": "40px", "font-weight": "bold" }, "fast");
+                }
+            }
+            function MouseLeave(ID) {
+
+                $("." + ID).animate({ "text-indent": "5px", "font-weight": "normal" }, "fast");
+            }
+
+        });
+
+
+
+        $(document).ready(function () {
+//            setInterval(function () {
+//                updateShopingCart(20);
+//            }, 5000);
+        });
+        function updateShopingCart(item) {
+           
+            var currentItemCounter = (Number(item) - 1);
+            //alert(currentItemCounter);
+
+
+            if (currentItemCounter > 0) {
+                $("#CartEmpty").hide(10, function () {
+                    $("#CartFilled").show(10, function () {
+                    });
+                });
+            }
+            if (currentItemCounter == 0) {
+                $("#CartEmpty").hide(10, function () {
+                    $("#CartFilled").show(10, function () {
+                        $(".CartItemContainer").effect("bounce", { times: 3 }, 100, function () {
+                            $(this).html(currentItemCounter + 1);
+                        });
+                    });
+                });
+            }
+            else {
+                $(".CartItemContainer").effect("bounce", { times: 3 }, 100, function () {
+                    $(this).html(currentItemCounter + 1);
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="PreloadImages" style="display: none;">
+        <img src="Images/btnDetailBuy2_Hover.png" />
+        <img src="Images/fb_FooterLinked.png" />
+        <img src="Images/tw_footerLinked.png" />
+        <img src="Images/rssFeed_FooterLinked.png" />
+        <img src="Images/email_FooterLinked.png" />
+        <img src="Images/BlueButtonBG_Hover.jpg" />
+        <img src="images/SelectLeft.jpg" />
+        <img src="images/result_border_hover.gif" />
+        <img src="images/Basket/ArrowYellow.gif" />
+        <img src="Images/menuSubMenu.jpg" />
+        <img src="Images/btnDetailBuy2_Hover.png" />
+    </div>
+    <asp:Literal ID="ltCart" runat="server"></asp:Literal>
+    <asp:Literal ID="ltScript" runat="server"></asp:Literal>
+    <div style="display: none;" id="UnderConstructionDialog">
+        <div>
+            <div class="UnderConstructionImage">
+            </div>
+            <div class="UnderConstructionDialogText" id="UnderConstructionMessage">
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="ErrorDialog">
+        <div>
+            <div class="ErrorImage">
+            </div>
+            <div class="ErrorDialogText" id="ErrorMessage">
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="SimpleErrorDialog">
+        <div>
+            <div class="ErrorDialogText" id="SimpleErrorMessage">
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="SuccessDialog">
+        <div>
+            <div class="SuccessImage">
+            </div>
+            <div class="SuccessDialogText" id="SuccessMessage">
+            </div>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="toolkitScriptMaster" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/JS/webkit.js" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div class="floatRight" align="center">
+            <asp:UpdateProgress ID="upTasty" runat="server" DisplayAfter="0">
+                <ProgressTemplate>
+                    <div class="ProgressLightbox">
+                        <div style="background-color: White; padding: 20px; width: 120px; border: solid 2px #e1e1e1;">
+                            <asp:Image ImageUrl="admin/Images/_load.gif" ToolTip="Processing..." runat="server"
+                                ID="imgLoad" />
+                            <br />
+                            <br />
+                            <asp:Label ID="lblLoad" runat="server" Text="Processing..."></asp:Label>
+                        </div>
+                    </div>
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+        </div>
+        <div class='<%=strTopBG %>'>
+            <asp:UpdatePanel ID="AdminUPNL" UpdateMode="Conditional" runat="server">
+                <ContentTemplate>
+                    <div id="divHeader" style="width: 100%; height: 200px; background-color: White;">
+                        <div id="LogoArea" style="clear: both; height: 90px; width: 980px; margin: 0 auto;">
+                            <center>
+                                <div id="TazzlingLogo" style="padding-top: 15px;">
+                                    <a href="Default.aspx" ><img src="images/Logo_New.png" /></a>
+                                </div>
+                                <div style="padding-top: 5px;" id="Slogan">
+                                    <img src="images/Slogan.png" />
+                                </div>
+                            </center>
+                        </div>
+                        <div id="TopMenuContainer" style="height: 55px; margin-top: 10px; border-top: 1px solid #e7e7e8;
+                            border-bottom: 1px solid #e7e7e8; overflow: hidden;">
+                            <div id="HeaderMenu" style="height: 100%; width: 980px; margin: 0 auto;">
+                                <div style="border-right: none !important;" class="MenuItem">
+                                    <div class="MenuIconFeeds">
+                                    </div>
+                                    <span class="MenuText" style="width:35px;">Feeds</span>
+                                </div>
+                                <div class="MenuItem">
+                                    <div class="MenuIconCalander">
+                                    </div>
+                                    <span class="MenuText" style="width:55px;">Calendar</span>
+                                </div>
+                                <div class="MenuItem">
+                                    <div class="MenuIconMobile">
+                                    </div>
+                                    <span class="MenuText" style="width:40px;">Mobile</span>
+                                </div>
+                                <div class="MenuItem">
+                                    <div class="MenuIconInvite">
+                                    </div>
+                                    <span class="MenuText" style="width:30px;">Invite</span>
+                                </div>
+                                <div class="MenuItem">
+                                    <div class="MenuIconHowItWorks">
+                                    </div>
+                                    <span class="MenuText" style="width:90px;">How it works</span>
+                                </div>
+                                <div class="MenuItemSearch">
+                                    <div class="SearchIcon">
+                                        <a id="BtnSearch" href="javascript:void(0)">
+                                            <%--<img src="images/SearchMirror.png" />--%>
+                                        </a>
+                                    </div>
+                                    <div id="SearchBox">
+                                        <asp:TextBox ID="txtSearch" runat="server" CssClass="SearchBox"></asp:TextBox>
+                                    </div>
+                                </div>
+                                <div style="display: none;" id="CartFilled">
+                                    <a href="cart.aspx"><div style="position: relative; float: left;">
+                                        <div id="CartItemCount" runat="server" class="CartItemContainer">
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="MenuItem ItemborderRight">
+                                        <div class="MenuIconShopingCart">
+                                        </div>
+                                        <span class="MenuText"></span></a>
+                                    </div>
+                                </div>
+                                <div id="CartEmpty">
+                                    <a href="cart.aspx"><div class="MenuItem ItemborderRightEmpty">
+                                        <div class="MenuIconShopingCartEmpty">
+                                        </div>
+                                        <span class="MenuText"></span></a>
+                                    </div>
+                                </div>
+                                <asp:Panel ID="pnlUserDropDown" runat="server">
+                                    <div id="UserNemu" style="background:FAFAFD;" class="UserNemu">
+                                        <span><asp:Label ID="userName" runat="server" Text=""></asp:Label></span>
+                                        <div class="UserMenuArrow">
+                                        </div>
+                                    </div>
+                                    <div style="float: right;margin-top:-1px; margin-right:178px;">
+                                        <ul class="UserMenuDropDown">
+                                            <li><asp:LinkButton ID="lnkTazzling" runat="server" Text="My Tazzling" OnClick="lnkTazzling_Click" Height="100%" Width="100%" ></asp:LinkButton></li>
+                                            <%--<li><asp:LinkButton ID="lnkGifts" runat="server" Text="My Gifts" OnClick="lnkGifts_Click"></asp:LinkButton></li>--%>
+                                            <li><asp:LinkButton ID="lnkAccount" runat="server" Text="My Account" OnClick="lnkAccount_Click" Height="100%" Width="100%" ></asp:LinkButton></li>
+                                            <li><asp:LinkButton ID="lnkPreferences" runat="server" Text="My Preferences" OnClick="lnkPreferences_Click" Height="100%" Width="100%" ></asp:LinkButton></li>
+                                            <li><asp:LinkButton ID="lnkSubscriptions" runat="server" Text="My Subscriptions" OnClick="lnkSubscriptions_Click" Height="100%" Width="100%" ></asp:LinkButton></li>
+                                            <li><asp:LinkButton ID="lnkReferral" runat="server" Text="Referral" OnClick="lnkReferral_Click" Height="100%" Width="100%" ></asp:LinkButton></li>
+                                            <li><asp:LinkButton ID="lnkSignOut" runat="server" Text="Sign out" OnClick="lnkSignOut_Click" Height="100%" Width="100%" ></asp:LinkButton></li>
+                                        </ul>
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="pnlSignupLogin" runat="server">
+                                    <div class="MenuItem" runat="server" id="divSignUp">
+                                        <div class="MenuIconShopingSignup"></div>
+                                        <span class="MenuText" style="width:50px;"><asp:HyperLink ID="hlSignup" runat="server" NavigateUrl="~/login.aspx" Text="Sign Up"></asp:HyperLink></span>
+                                    </div>
+                                    <div class="MenuItem" runat="server" id="divLogin" style="border-right:1px solid #E7E7E8;">
+                                        <div class="MenuIconShopingLogin"></div>
+                                        <span class="MenuText"><asp:HyperLink ID="hlLogin" runat="server" NavigateUrl="~/login.aspx" Text="Login"></asp:HyperLink></span>
+                                    </div>
+                                </asp:Panel>
+                            </div>
+                        </div>
+                        <div id="HeaderSubMenu">
+                            <usrCtrl:TopView ID="topView" runat="server" />
+                        </div>
+                    </div>
+                    <div style="clear: both; background-image: url('images/Header_Line.jpg'); background-repeat: repeat;
+                        height: 14px; width: 100%;">
+                    </div>
+                    <div id="pagezone">
+                        <div id="mainZone">
+                        </div>
+                        <div style="clear: both;">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+    </div>
+    <div style="clear: both;">
+        <div id="divFooter" style="padding-top: 30px; clear: both;">
+            <usrCtrl:FooterZone ID="footerZone" runat="server" />
+        </div>
+        <div style="position: fixed; z-index: 9999999999999; bottom: 0px; width: 100%;">
+            <center>
+                <div style="width: 920px" id="messages">
+                </div>
+            </center>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
